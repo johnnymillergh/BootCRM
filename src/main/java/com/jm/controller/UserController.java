@@ -17,8 +17,8 @@ import java.util.Map;
  *
  * @title: UserController
  * @package: com.jm.controller
- * @author: Zhong Jun (钟俊) (jun.zhong@ucarinc.com)
- * @date: 2018/8/2 下午 4:08
+ * @author: Johnny Miller (锺俊) (johnnysviva@outlook.com)
+ * @date: 8/2/18 11:19 PM
  * @version: V1.0
  **/
 @Controller
@@ -45,12 +45,12 @@ public class UserController {
         users = userService123.selectUser(map);
         ModelAndView model = new ModelAndView();
         model.addObject("users", users);
-        model.setViewName("/views/index.jsp");
+        model.setViewName("/views/userList.jsp");
         return model;
     }
 
     @RequestMapping(value = "/test")
     public String test() {
-        return "/views/index.jsp";
+        return "/views/userList.jsp";
     }
 }

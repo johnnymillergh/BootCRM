@@ -9,9 +9,9 @@ import java.util.Map;
  * Description:
  *
  * @title: UserService
- * @package: com.jm.service
- * @author: Zhong Jun (钟俊) (jun.zhong@ucarinc.com)
- * @date: 2018/8/2 下午 4:06
+ * @package: com.jm.controller
+ * @author: Johnny Miller (锺俊) (johnnysviva@outlook.com)
+ * @date: 8/2/18 11:19 PM
  * @version: V1.0
  **/
 public interface UserService {
