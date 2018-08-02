@@ -45,7 +45,12 @@ public class UserController {
         users = userService123.selectUser(map);
         ModelAndView model = new ModelAndView();
         model.addObject("users", users);
-        model.setViewName("index");
+        model.setViewName("/views/index.jsp");
         return model;
+    }
+
+    @RequestMapping(value = "/test")
+    public String test() {
+        return "/views/index.jsp";
     }
 }
