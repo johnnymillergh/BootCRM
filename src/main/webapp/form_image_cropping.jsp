@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -47,6 +44,7 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color"/>
     <!-- end: CLIP-TWO CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="vendor/Jcrop/jquery.Jcrop.min.css" rel="stylesheet" media="screen">
     <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 </head>
 <!-- end: HEAD -->
@@ -79,7 +77,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -204,7 +202,7 @@ To change this template use File | Settings | File Templates.
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active open">
                         <a href="javascript:void(0)">
                             <div class="item-content">
                                 <div class="item-media">
@@ -236,7 +234,7 @@ To change this template use File | Settings | File Templates.
                                     <span class="title">Form Validation</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="form_image_cropping.jsp">
                                     <span class="title">Image Cropping</span>
                                 </a>
@@ -945,999 +943,138 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Image Cropping</h1>
+                            <span class="mainDescription">Jcrop is the quick and easy way to add image cropping functionality to your web application.</span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li>
+                                <span>Forms</span>
+                            </li>
+                            <li class="active">
+                                <span>Image Cropping</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Basic <span class="text-bold">Handler</span></h5>
+                            <p class="margin-bottom-20">
+                                <b>An example with a basic event handler.</b> Here we've tied
+                                several form values together with a simple event handler invocation.
+                                The result is that the form values are updated in real-time as
+                                the selection is changed using Jcrop's <em>onChange</em> handler.
+                            </p>
+                            <p>
+                                That's how easily Jcrop can be integrated into a traditional web form!
+                            </p>
+                            <!-- This is the image we're attaching Jcrop to -->
+                            <img src="vendor/Jcrop/demo_files/sago.jpg" id="target" alt="[Jcrop Example]"/>
+                            <!-- This is the form that our event handler fills -->
+                            <form id="coords" class="coords margin-top-20" onsubmit="return false;"
+                                  action="http://example.com/post.php">
+                                <div class="inline-labels">
+                                    <label>
+                                        X1
+                                        <input type="text" size="4" id="x1" name="x1"/>
+                                    </label>
+                                    <label>
+                                        Y1
+                                        <input type="text" size="4" id="y1" name="y1"/>
+                                    </label>
+                                    <label>
+                                        X2
+                                        <input type="text" size="4" id="x2" name="x2"/>
+                                    </label>
+                                    <label>
+                                        Y2
+                                        <input type="text" size="4" id="y2" name="y2"/>
+                                    </label>
+                                    <label>
+                                        W
+                                        <input type="text" size="4" id="w" name="w"/>
+                                    </label>
+                                    <label>
+                                        H
+                                        <input type="text" size="4" id="h" name="h"/>
+                                    </label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
-                                    <p class="text-small">
-                                        Store, modify, and extract information from your database.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
+                <div class="container-fluid container-fullw">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
-                                                <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
-                                                    </div>
-                                                </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
-                                        </div>
-                                        <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Direct
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Sites
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Search
-                                                </div>
-                                            </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
-                                            </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Preview <span class="text-bold">Pane</span></h5>
+                            <p>
+                                <b>An example implementing a preview pane.</b>
+                                Obviously the most visual demo, the preview pane is accomplished
+                                entirely outside of Jcrop with a simple jQuery-flavored callback.
+                                This type of interface could be useful for creating a thumbnail
+                                or avatar. The onChange event handler is used to update the
+                                view in the preview pane.
+                            </p>
+                            <img src="vendor/Jcrop/demo_files/pool.jpg" id="target2" alt="[Jcrop Example]"/>
+                            <div id="preview-pane">
+                                <div class="preview-container">
+                                    <img src="vendor/Jcrop/demo_files/pool.jpg" class="jcrop-preview" alt="Preview"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
-                                    </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Animations <span
+                                    class="text-bold">+ Transitions</span></h5>
+                            <p>
+                                <b>Animation/Transitions.</b>
+                                Demonstration of animateTo API method and transitions for bgColor
+                                and bgOpacity options. Color fading requires inclusion of John Resig's
+                                jQuery
+                                <a href="http://plugins.jquery.com/project/color">
+                                    Color
+                                    Animations
+                                </a>
+                                plugin. If it is not included, colors will not fade.
+                            </p>
+                            <div class="alert alert-warning no-display" id="shadetxt">
+                                <b>Experimental shader active.</b>
+                                Jcrop now includes a shading mode that facilitates building
+                                better transparent Jcrop instances. The experimental shader is less
+                                robust than Jcrop's default shading method and should only be
+                                used if you require this functionality.
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
+                                    <img src="vendor/Jcrop/demo_files/sago.jpg" id="target3" alt="Jcrop Image"/>
+                                </div>
+                                <div class="col-md-12" id="interface">
+                                    <div class="checkbox clip-check check-primary">
+                                        <input type="checkbox" id="fadetog" value="1">
+                                        <label for="fadetog">
+                                            Enable fading (bgFade: true)
+                                        </label>
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
-                                                </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
-                                                </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
-                                                </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How are you?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
-                                        </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
+                                    <div class="checkbox clip-check check-primary">
+                                        <input type="checkbox" id="shadetog" value="1">
+                                        <label for="shadetog">
+                                            Use experimental shader (shade: true)
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FOURTH SECTION -->
             </div>
         </div>
     </div>
@@ -2575,17 +1712,17 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/switchery/switchery.min.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+<script src="vendor/Jcrop/jquery.Jcrop.min.js"></script>
+<script src="vendor/Jcrop/jquery.color.js"></script>
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
+<script src="assets/js/form-image-cropping.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
+        ImageCropping.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

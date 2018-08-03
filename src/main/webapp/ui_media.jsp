@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -79,7 +76,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -91,7 +88,7 @@ To change this template use File | Settings | File Templates.
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="active open">
                         <a href="javascript:void(0)">
                             <div class="item-content">
                                 <div class="item-media">
@@ -158,7 +155,7 @@ To change this template use File | Settings | File Templates.
                                     <span class="title"> Treeview </span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="ui_media.jsp">
                                     <span class="title"> Media Object </span>
                                 </a>
@@ -945,254 +942,436 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Media</h1>
+                            <span class="mainDescription">Images, thumbnails and media object.</span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li>
+                                <span>UI Elements</span>
+                            </li>
+                            <li class="active">
+                                <span>Media Object</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
+                <!-- start: MEDIA OBJECT -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
-                                    <p class="text-small">
-                                        Store, modify, and extract information from your database.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-md-12">
+                            <h5 class="over-title">Media <span class="text-bold">Object</span></h5>
+                            <p class="margin-bottom-30">
+                                Abstract object styles for building various types of components (like blog comments,
+                                Tweets, etc) that feature a left- or right-aligned image alongside textual content.
+                            </p>
                             <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
-                                                <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-white">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Default media
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                The default media displays a media object (images, video, audio) to the
+                                                left or right of a content block.
+                                            </p>
+                                            <ul class="media-list">
+                                                <li class="media">
+                                                    <a href="#" class="pull-left">
+                                                        <img src="assets/images/media-user.png" alt=""
+                                                             class="media-object">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        <p>
+                                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                            scelerisque ante sollicitudin commodo. Cras purus odio,
+                                                            vestibulum in vulputate at, tempus viverra turpis.
+                                                        </p>
+                                                        <!-- Nested media object -->
+                                                        <div class="media">
+                                                            <a href="#" class="pull-left">
+                                                                <img src="assets/images/media-user.png" alt=""
+                                                                     class="media-object">
                                                             </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Nested media heading</h4>
+                                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                                                                metus scelerisque ante sollicitudin commodo. Cras purus
+                                                                odio, vestibulum in vulputate at, tempus viverra turpis.
+                                                                <!-- Nested media object -->
+                                                                <div class="media">
+                                                                    <a href="#" class="pull-left">
+                                                                        <img src="assets/images/media-user.png" alt=""
+                                                                             class="media-object">
                                                                     </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                                    <div class="media-body">
+                                                                        <h4 class="media-heading">Nested media
+                                                                            heading</h4>
+                                                                        Cras sit amet nibh libero, in gravida nulla.
+                                                                        Nulla vel metus scelerisque ante sollicitudin
+                                                                        commodo. Cras purus odio, vestibulum in
+                                                                        vulputate at, tempus viverra turpis.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Nested media object -->
+                                                        <div class="media">
+                                                            <a href="#" class="pull-left">
+                                                                <img src="assets/images/media-user.png" alt=""
+                                                                     class="media-object">
+                                                            </a>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Nested media heading</h4>
+                                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                                                                metus scelerisque ante sollicitudin commodo. Cras purus
+                                                                odio, vestibulum in vulputate at, tempus viverra turpis.
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
+                                                <li class="media">
+                                                    <a href="#" class="pull-right">
+                                                        <img src="assets/images/media-user.png" alt=""
+                                                             class="media-object">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                        scelerisque ante sollicitudin commodo. Cras purus odio,
+                                                        vestibulum in vulputate at, tempus viverra turpis.
                                                     </div>
                                                 </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
+                                                <li class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img src="assets/images/media-user.png" alt=""
+                                                             class="media-object">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Media heading</h4>
+                                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                        scelerisque ante sollicitudin commodo. Cras purus odio,
+                                                        vestibulum in vulputate at, tempus viverra turpis.
+                                                    </div>
+                                                    <a class="media-right" href="#">
+                                                        <img src="assets/images/media-user.png" alt=""
+                                                             class="media-object">
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Media alignment
+                                            </div>
                                         </div>
                                         <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
+                                            <p class="text-small">
+                                                The images or other media can be aligned top, middle, or bottom. The
+                                                default is top aligned.
+                                            </p>
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img src="assets/images/media-user.png" alt="" class="media-object">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Top aligned media</h4>
+                                                    <p>
+                                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                        scelerisque ante sollicitudin commodo. Cras purus odio,
+                                                        vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                                        condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                                                        congue felis in faucibus.
+                                                    </p>
+                                                    <p>
+                                                        Donec sed odio dui. Nullam quis risus eget urna mollis ornare
+                                                        vel eu leo. Cum sociis natoque penatibus et magnis dis
+                                                        parturient montes, nascetur ridiculus mus.
+                                                    </p>
                                                 </div>
                                             </div>
+                                            <div class="media">
+                                                <a class="media-left media-middle" href="#">
+                                                    <img src="assets/images/media-user.png" alt="" class="media-object">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Middle aligned media</h4>
+                                                    <p>
+                                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                        scelerisque ante sollicitudin commodo. Cras purus odio,
+                                                        vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                                        condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                                                        congue felis in faucibus.
+                                                    </p>
+                                                    <p>
+                                                        Donec sed odio dui. Nullam quis risus eget urna mollis ornare
+                                                        vel eu leo. Cum sociis natoque penatibus et magnis dis
+                                                        parturient montes, nascetur ridiculus mus.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <a class="media-left media-bottom" href="#">
+                                                    <img src="assets/images/media-user.png" alt="" class="media-object">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Bottom aligned media</h4>
+                                                    <p>
+                                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                        scelerisque ante sollicitudin commodo. Cras purus odio,
+                                                        vestibulum in vulputate at, tempus viverra turpis. Fusce
+                                                        condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                                                        congue felis in faucibus.
+                                                    </p>
+                                                    <p class="no-margin">
+                                                        Donec sed odio dui. Nullam quis risus eget urna mollis ornare
+                                                        vel eu leo. Cum sociis natoque penatibus et magnis dis
+                                                        parturient montes, nascetur ridiculus mus.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: MEDIA OBJECT -->
+                <!-- start: IMAGES AND THUMBNAILS -->
+                <div class="container-fluid container-fullw">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Images &amp; <span
+                                    class="text-bold">Thumbnails</span></h5>
+                            <p>
+                                Extend Bootstrap's grid system with the thumbnail component to easily display grids of
+                                images, videos, text, and more.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel panel-white">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Default example
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                By default, Bootstrap's thumbnails are designed to showcase linked
+                                                images with minimal required markup.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="assets/images/lion-565820_640.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="assets/images/africa-17344_640.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="assets/images/lion-403764_640.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="assets/images/lion-565818_640.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Custom Content
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                With a bit of extra markup, it's possible to add any kind of HTML
+                                                content like headings, paragraphs, or buttons into thumbnails.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <img src="assets/images/lion-565818_640.jpg" alt="">
+                                                        <div class="caption">
+                                                            <h3>Thumbnail label</h3>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget
+                                                                quam. Donec id elit non mi porta gravida at eget metus.
+                                                                Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                            <p>
+                                                                <a href="#" class="btn btn-o btn-danger">
+                                                                    Button
+                                                                </a>
+                                                                <a href="#" class="btn btn-o btn-primary">
+                                                                    Button
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <img src="assets/images/lion-403764_640.jpg" alt="">
+                                                        <div class="caption">
+                                                            <h3>Thumbnail label</h3>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget
+                                                                quam. Donec id elit non mi porta gravida at eget metus.
+                                                                Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                            <p>
+                                                                <a href="#" class="btn btn-o btn-danger">
+                                                                    Button
+                                                                </a>
+                                                                <a href="#" class="btn btn-o btn-primary">
+                                                                    Button
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <img src="assets/images/africa-17344_640.jpg" alt="">
+                                                        <div class="caption">
+                                                            <h3>Thumbnail label</h3>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget
+                                                                quam. Donec id elit non mi porta gravida at eget metus.
+                                                                Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                            <p>
+                                                                <a href="#" class="btn btn-o btn-danger">
+                                                                    Button
+                                                                </a>
+                                                                <a href="#" class="btn btn-o btn-primary">
+                                                                    Button
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <img src="assets/images/lion-565820_640.jpg" alt="">
+                                                        <div class="caption">
+                                                            <h3>Thumbnail label</h3>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget
+                                                                quam. Donec id elit non mi porta gravida at eget metus.
+                                                                Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                            <p>
+                                                                <a href="#" class="btn btn-o btn-danger">
+                                                                    Button
+                                                                </a>
+                                                                <a href="#" class="btn btn-o btn-primary">
+                                                                    Button
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Image shapes
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Add classes to an <code> &lt;img&gt;</code>
+                                                element to easily style images in any project.
+                                            </p>
                                             <div class="row">
                                                 <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-xs-offset-3">
+                                                            <img src="assets/images/lion-565818_640.jpg"
+                                                                 class="img-rounded img-responsive margin-bottom-15"
+                                                                 alt="A generic image with rounded corners">
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="well well-sm margin-bottom-15 text-center">
+                                                                <span class="nt">&lt;img </span><span
+                                                                    class="na">src=</span><span
+                                                                    class="s">"..." </span><span
+                                                                    class="na">alt=</span><span
+                                                                    class="s">"..." </span><span
+                                                                    class="na">class=</span><span class="s">"img-rounded"</span><span
+                                                                    class="nt">&gt;</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    Direct
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-xs-offset-3">
+                                                            <img src="assets/images/lion-565818_640.jpg"
+                                                                 class="img-circle img-responsive margin-bottom-15"
+                                                                 alt="A generic image where only the portion within the circle circumscribed about said square is visible">
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="well well-sm margin-bottom-15 text-center">
+                                                                <span class="nt">&lt;img </span><span
+                                                                    class="na">src=</span><span
+                                                                    class="s">"..." </span><span
+                                                                    class="na">alt=</span><span
+                                                                    class="s">"..." </span><span
+                                                                    class="na">class=</span><span
+                                                                    class="s">"img-circle"</span><span
+                                                                    class="nt">&gt;</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    Sites
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-xs-offset-3">
+                                                            <img src="assets/images/lion-565818_640.jpg"
+                                                                 class="img-thumbnail img-responsive margin-bottom-15"
+                                                                 alt="A generic image with a white border around it, making it resemble a photograph taken with an old instant camera">
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="well well-sm margin-bottom-15 text-center">
+                                                                <span class="nt">&lt;img </span><span
+                                                                    class="na">src=</span><span
+                                                                    class="s">"..." </span><span
+                                                                    class="na">alt=</span><span
+                                                                    class="s">"..." </span><span
+                                                                    class="na">class=</span><span class="s">"img-thumbnail"</span><span
+                                                                    class="nt">&gt;</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    Search
-                                                </div>
-                                            </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
-                                            </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1202,742 +1381,7 @@ To change this template use File | Settings | File Templates.
                         </div>
                     </div>
                 </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
-                                    </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
-                                                </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
-                                                </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
-                                                </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How are you?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
-                                        </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: FOURTH SECTION -->
+                <!-- end: IMAGES AND THUMBNAILS -->
             </div>
         </div>
     </div>
@@ -2573,19 +2017,12 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/jquery-cookie/jquery.cookie.js"></script>
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="vendor/switchery/switchery.min.js"></script>
-<!-- end: MAIN JAVASCRIPTS -->
-<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
-<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

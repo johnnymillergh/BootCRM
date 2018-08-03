@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -47,6 +44,9 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color"/>
     <!-- end: CLIP-TWO CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="vendor/sweetalert/sweet-alert.css" rel="stylesheet" media="screen">
+    <link href="vendor/sweetalert/ie9.css" rel="stylesheet" media="screen">
+    <link href="vendor/toastr/toastr.min.css" rel="stylesheet" media="screen">
     <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 </head>
 <!-- end: HEAD -->
@@ -79,7 +79,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -91,7 +91,7 @@ To change this template use File | Settings | File Templates.
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="active open">
                         <a href="javascript:void(0)">
                             <div class="item-content">
                                 <div class="item-media">
@@ -148,7 +148,7 @@ To change this template use File | Settings | File Templates.
                                     <span class="title"> Panels </span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="ui_notifications.jsp">
                                     <span class="title"> Notifications </span>
                                 </a>
@@ -945,256 +945,139 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Notifications</h1>
+                            <span class="mainDescription">A small box that appears on the display screen to give you information or to warn you about a potentially damaging operation. <small
+                                    class="block">Webopedia - Online Tech Dictionary for IT Professionals</small></span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li>
+                                <span>UI Elements</span>
+                            </li>
+                            <li class="active">
+                                <span>Notifications</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
+                <!-- start: SWEETALERT -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
-                                    <p class="text-small">
-                                        Store, modify, and extract information from your database.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Sweet Alert</span></h5>
+                            <p>
+                                Sweet Alert is a beautiful replacement for Javascript's "Alert".
+                            </p>
                             <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
-                                                <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
-                                                    </div>
-                                                </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Basic message
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
                                         </div>
                                         <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
-                                                </div>
+                                            <p class="margin-bottom-30">
+                                                Show a basic message to give information to the user or to warn about a
+                                                potentially damaging operation.
+                                            </p>
+                                            <button class="btn btn-primary pull-right basic-message">
+                                                Open Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Title with a text under
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Direct
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Sites
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Search
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                Not enough basic message? Show more information to the user by entering
+                                                a text below the title
+                                            </p>
+                                            <button class="btn btn-primary pull-right message-text-under">
+                                                Open Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Success message
                                             </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                Shows the user a message to warn him that a certain operation is
+                                                successful.
+                                            </p>
+                                            <button class="btn btn-primary pull-right success-message">
+                                                Open Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Warning message
                                             </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                Shows the user a warning message, with a function attached to the
+                                                "Confirm" button.
+                                            </p>
+                                            <button class="btn btn-primary pull-right warning-message">
+                                                Open Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Another warning message
                                             </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                By passing a parameter to warning message, you can execute something
+                                                else for "Cancel".
+                                            </p>
+                                            <button class="btn btn-primary pull-right warning-message-parameter">
+                                                Open Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Custom icon
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                If desired, you can make more effective the message by adding a custom
+                                                icon
+                                            </p>
+                                            <button class="btn btn-primary pull-right message-custom-icon">
+                                                Open Message
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -1202,742 +1085,402 @@ To change this template use File | Settings | File Templates.
                         </div>
                     </div>
                 </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
-                <div class="container-fluid container-fullw bg-white">
+                <!-- end: SWEETALERT -->
+                <!-- start: TOASTER -->
+                <div class="container-fluid container-fullw">
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Toaster notifications</span>
+                            </h5>
+                            <p>
+                                toastr is a Javascript library for non-blocking notifications. The goal is to create a
+                                simple core library that can be customized and extended.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="title" class="control-label">
+                                            Title
+                                        </label>
+                                        <input type="text" placeholder="Enter a title ..." value="Toastr Notifications"
+                                               class="form-control" id="title">
                                     </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
+                                    <div class="form-group">
+                                        <label for="message" class="control-label">
+                                            Message
+                                        </label>
+                                        <textarea placeholder="Enter a message ..." rows="3" id="message"
+                                                  class="form-control">Gnome &amp; Growl type non-blocking notifications</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox-list">
+                                            <div class="checkbox clip-check check-primary">
+                                                <input type="checkbox" id="closeButton">
+                                                <label for="closeButton">
+                                                    Close Button
+                                                </label>
                                             </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                            <div class="checkbox clip-check check-primary">
+                                                <input type="checkbox" id="addBehaviorOnToastClick">
+                                                <label for="addBehaviorOnToastClick">
+                                                    Add behavior on toast click
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div id="toastTypeGroup" class="form-group">
+                                        <label>
+                                            Toast Type
+                                        </label>
+                                        <div class="radio-list">
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="success" name="toasts" id="typesuccess">
+                                                    <label for="typesuccess">
+                                                        Success
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="info" name="toasts" id="typeinfo">
+                                                    <label for="typeinfo">
+                                                        Info
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="warning" name="toasts" id="typewarning">
+                                                    <label for="typewarning">
+                                                        Warning
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="error" name="toasts" id="typeerror">
+                                                    <label for="typeerror">
+                                                        Error
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
+                                    <div id="positionGroup" class="form-group">
+                                        <label>
+                                            Position
+                                        </label>
+                                        <div class="radio-list">
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="toast-top-right" name="positions"
+                                                           id="typetr">
+                                                    <label for="typetr">
+                                                        Top Right
+                                                    </label>
                                                 </div>
                                             </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="toast-bottom-right" name="positions"
+                                                           id="typebr">
+                                                    <label for="typebr">
+                                                        Bottom Right
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="toast-bottom-left" name="positions"
+                                                           id="typebl">
+                                                    <label for="typebl">
+                                                        Bottom Left
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="toast-top-left" name="positions"
+                                                           id="typetl">
+                                                    <label for="typetl">
+                                                        Top Left
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="toast-top-full-width" name="positions"
+                                                           id="typetfw">
+                                                    <label for="typetfw">
+                                                        Top Full Width
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <div class="radio clip-radio radio-primary">
+                                                    <input type="radio" value="toast-bottom-full-width" name="positions"
+                                                           id="typebfw">
+                                                    <label for="typebfw">
+                                                        Bottom Full Width
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="controls">
+                                            <label for="showEasing" class="control-label">
+                                                Show Easing
+                                            </label>
+                                            <input type="text" value="swing" class="form-control input-small"
+                                                   placeholder="swing, linear" id="showEasing">
+                                            <label for="hideEasing" class="control-label">
+                                                Hide Easing
+                                            </label>
+                                            <input type="text" value="linear" class="form-control input-small"
+                                                   placeholder="swing, linear" id="hideEasing">
+                                            <label for="showMethod" class="control-label">
+                                                Show Method
+                                            </label>
+                                            <input type="text" value="fadeIn" class="form-control input-small"
+                                                   placeholder="show, fadeIn, slideDown" id="showMethod">
+                                            <label for="hideMethod" class="control-label">
+                                                Hide Method
+                                            </label>
+                                            <input type="text" value="fadeOut" class="form-control input-small"
+                                                   placeholder="hide, fadeOut, slideUp" id="hideMethod">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="controls">
+                                            <label for="showDuration" class="control-label">
+                                                Show Duration
+                                            </label>
+                                            <input type="text" value="1000" class="form-control input-small"
+                                                   placeholder="ms" id="showDuration">
+                                            <label for="hideDuration" class="control-label">
+                                                Hide Duration
+                                            </label>
+                                            <input type="text" value="1000" class="form-control input-small"
+                                                   placeholder="ms" id="hideDuration">
+                                            <label for="timeOut" class="control-label">
+                                                Time out
+                                            </label>
+                                            <input type="text" value="5000" class="form-control input-small"
+                                                   placeholder="ms" id="timeOut">
+                                            <label for="timeOut" class="control-label">
+                                                Extended time out
+                                            </label>
+                                            <input type="text" value="1000" class="form-control input-small"
+                                                   placeholder="ms" id="extendedTimeOut">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                            <div class="row space20">
+                                <div class="col-md-12">
+                                    <button id="showtoast" class="btn btn-primary btn-wide" type="button">
+                                        Show Toast
+                                    </button>
+                                    <button id="cleartoasts" class="btn btn-primary btn-o btn-wide" type="button">
+                                        Clear Toasts
+                                    </button>
+                                    <button id="clearlasttoast" class="btn brn-red" type="button">
+                                        Clear Last Toast
+                                    </button>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
-                                                </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
-                                                </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
-                                                </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How are you?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
-                                        </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
-                                    </div>
+											<pre id='toastrOptions'>
+													Settings...
+												</pre>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FOURTH SECTION -->
+                <!-- end: TOASTER -->
+                <!-- start: ALERTS AND NOTIFICATIONS -->
+                <div class="container-fluid container-fullw bg-white">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Inline <span class="text-bold">Alerts and Notifications</span>
+                            </h5>
+                            <p>
+                                Provide contextual feedback messages for typical user actions with the handful of
+                                available and flexible messages.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- start: ALERTS PANEL -->
+                                    <h5 class="over-title">Alerts</h5>
+                                    <div class="panel panel-white">
+                                        <div class="panel-body">
+                                            <h5 class="margin-bottom-20">Basic</h5>
+                                            <p class="text-small">
+                                                Wrap any text and an optional dismiss button in <code> .alert </code>
+                                                and one of the four contextual classes (e.g., <code>
+                                                .alert-success </code>
+                                                ) for basic alert messages.
+                                            </p>
+                                            <p class="text-small">
+                                                Use the <code> .alert-link </code>
+                                                utility class to quickly provide matching colored links within any
+                                                alert.
+                                            </p>
+                                            <div role="alert" class="alert alert-success">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <strong>Well done!</strong> You successfully read this important alert
+                                                message.
+                                            </div>
+                                            <div class="alert alert-info">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <strong>Heads up!</strong>
+                                                This
+                                                <a class="alert-link" href="#">
+                                                    alert needs your attention
+                                                </a>
+                                                , but it's not super important.
+                                            </div>
+                                            <div class="alert alert-warning">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <strong>Warning!</strong>
+                                                Better check yourself, you're
+                                                <a class="alert-link" href="#">
+                                                    not looking too good
+                                                </a>
+                                                .
+                                            </div>
+                                            <div class="alert alert-danger">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <strong>Oh snap!</strong>
+                                                <a class="alert-link" href="#">
+                                                    Change a few things up
+                                                </a>
+                                                and try submitting again.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end: ALERTS PANEL -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- start: NOTIFICATION PANEL -->
+                                    <h5 class="over-title">Notifications</h5>
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-body">
+                                            <div class="alert alert-block alert-danger fade in">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="alert-heading margin-bottom-10"><i class="ti-close"></i>
+                                                    Error!</h4>
+                                                <p class="margin-bottom-10">
+                                                    Duis mollis, est non commodo luctus,
+                                                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                                                    mattis consectetur purus sit amet fermentum.
+                                                </p>
+                                                <p>
+                                                    <a href="#" class="btn btn-danger">
+                                                        Take this action
+                                                    </a>
+                                                    <a href="#" class="btn btn-o btn-danger">
+                                                        Or do this
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="alert alert-block alert-success fade in">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="alert-heading margin-bottom-10"><i class="ti-check"></i>
+                                                    Success!</h4>
+                                                <p class="margin-bottom-10">
+                                                    Duis mollis, est non commodo luctus,
+                                                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                                                    mattis consectetur purus sit amet fermentum.
+                                                </p>
+                                                <p>
+                                                    <a href="#" class="btn btn-success">
+                                                        Take this action
+                                                    </a>
+                                                    <a href="#" class="btn btn-o btn-success">
+                                                        Or do this
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="alert alert-block alert-info fade in">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="alert-heading margin-bottom-10"><i class="ti-info"></i> Info!
+                                                </h4>
+                                                <p class="margin-bottom-10">
+                                                    Duis mollis, est non commodo luctus,
+                                                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                                                    mattis consectetur purus sit amet fermentum.
+                                                </p>
+                                                <p>
+                                                    <a href="#" class="btn btn-info">
+                                                        Take this action
+                                                    </a>
+                                                    <a href="#" class="btn btn-o btn-info">
+                                                        Or do this
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div class="alert alert-block alert-warning fade in">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="alert-heading margin-bottom-10"><i class="ti-alert"></i>
+                                                    Warning!</h4>
+                                                <p class="margin-bottom-10">
+                                                    Duis mollis, est non commodo luctus,
+                                                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                                                    mattis consectetur purus sit amet fermentum.
+                                                </p>
+                                                <p>
+                                                    <a href="#" class="btn btn-warning">
+                                                        Take this action
+                                                    </a>
+                                                    <a href="#" class="btn btn-o btn-warning">
+                                                        Or do this
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end: NOTIFICATION PANEL -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: ALERTS AND NOTIFICATIONS -->
             </div>
         </div>
     </div>
@@ -2575,17 +2118,17 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/switchery/switchery.min.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+<script src="vendor/sweetalert/sweet-alert.min.js"></script>
+<script src="vendor/toastr/toastr.min.js"></script>
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
+<script src="assets/js/ui-notifications.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
+        UINotifications.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

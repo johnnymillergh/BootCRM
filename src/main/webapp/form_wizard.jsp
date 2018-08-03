@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -79,7 +76,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -204,7 +201,7 @@ To change this template use File | Settings | File Templates.
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active open">
                         <a href="javascript:void(0)">
                             <div class="item-content">
                                 <div class="item-media">
@@ -226,7 +223,7 @@ To change this template use File | Settings | File Templates.
                                     <span class="title">Text Editor</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="form_wizard.jsp">
                                     <span class="title">Form Wizard</span>
                                 </a>
@@ -945,999 +942,504 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Form Wizard</h1>
+                            <span class="mainDescription">Form Wizard allows to build a wizard functionality using buttons to go through the different wizard steps</span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li>
+                                <span>Forms</span>
+                            </li>
+                            <li class="active">
+                                <span>Form Wizard</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
+                <!-- start: WIZARD DEMO -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
-                                    <p class="text-small">
-                                        Store, modify, and extract information from your database.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
-                                                <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
-                                                    </div>
-                                                </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Wizard <span class="text-bold">demo</span></h5>
+                            <p>
+                                Some textboxes in this example is required.
+                            </p>
+                            <!-- start: WIZARD FORM -->
+                            <form action="#" role="form" class="smart-wizard" id="form">
+                                <div id="wizard" class="swMain">
+                                    <!-- start: WIZARD SEPS -->
+                                    <ul>
+                                        <li>
+                                            <a href="#step-1">
+                                                <div class="stepNumber">
+                                                    1
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
-                                        </div>
-                                        <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Direct
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Sites
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Search
-                                                </div>
-                                            </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
-                                            </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
-                                    </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
-                                            </div>
+                                                <span class="stepDesc"><small> Personal Information </small></span>
+                                            </a>
                                         </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
+                                        <li>
+                                            <a href="#step-2">
+                                                <div class="stepNumber">
+                                                    2
                                                 </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
+                                                <span class="stepDesc"> <small> Create an account </small></span>
+                                            </a>
                                         </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
+                                        <li>
+                                            <a href="#step-3">
+                                                <div class="stepNumber">
+                                                    3
                                                 </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
+                                                <span class="stepDesc"> <small> Billing details </small> </span>
+                                            </a>
                                         </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
+                                        <li>
+                                            <a href="#step-4">
+                                                <div class="stepNumber">
+                                                    4
                                                 </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
+                                                <span class="stepDesc"> <small> Complete </small> </span>
+                                            </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
+                                    <!-- end: WIZARD SEPS -->
+                                    <!-- start: WIZARD STEP 1 -->
+                                    <div id="step-1">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="padding-30">
+                                                    <h2 class="StepTitle"><i
+                                                            class="ti-face-smile fa-2x text-primary block margin-bottom-10"></i>
+                                                        Enter your personal information</h2>
+                                                    <p>
+                                                        This is an added measure against fraud and to help with billing
+                                                        issues.
+                                                    </p>
+                                                    <p class="text-small">
+                                                        Enter security questions in case you lose access to your
+                                                        account.
+                                                    </p>
                                                 </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
+                                            </div>
+                                            <div class="col-md-7">
+                                                <fieldset>
+                                                    <legend>
+                                                        Personal Information
+                                                    </legend>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>
+                                                                    First Name <span class="symbol required"></span>
+                                                                </label>
+                                                                <input type="text" placeholder="Enter your First Name"
+                                                                       class="form-control" name="firstName"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Last Name <span class="symbol required"></span>
+                                                                </label>
+                                                                <input type="text" placeholder="Enter your Last Name"
+                                                                       class="form-control" name="lastName"/>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="message-text">
-                                                        How are you?
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="block">
+                                                                    Gender
+                                                                </label>
+                                                                <div class="clip-radio radio-primary">
+                                                                    <input type="radio" id="wz-female" name="gender"
+                                                                           value="female">
+                                                                    <label for="wz-female">
+                                                                        Female
+                                                                    </label>
+                                                                    <input type="radio" id="wz-male" name="gender"
+                                                                           value="male">
+                                                                    <label for="wz-male">
+                                                                        Male
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>
+                                                                    Choose your country or region
+                                                                </label>
+                                                                <select class="form-control" name="country">
+                                                                    <option value="">&nbsp;</option>
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="CA">California</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="CT">Connecticut</option>
+                                                                    <option value="DE">Delaware</option>
+                                                                    <option value="FL">Florida</option>
+                                                                    <option value="GA">Georgia</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                    <option value="ID">Idaho</option>
+                                                                    <option value="IL">Illinois</option>
+                                                                    <option value="IN">Indiana</option>
+                                                                    <option value="IA">Iowa</option>
+                                                                    <option value="KS">Kansas</option>
+                                                                    <option value="KY">Kentucky</option>
+                                                                    <option value="LA">Louisiana</option>
+                                                                    <option value="ME">Maine</option>
+                                                                    <option value="MD">Maryland</option>
+                                                                    <option value="MA">Massachusetts</option>
+                                                                    <option value="MI">Michigan</option>
+                                                                    <option value="MN">Minnesota</option>
+                                                                    <option value="MS">Mississippi</option>
+                                                                    <option value="MO">Missouri</option>
+                                                                    <option value="MT">Montana</option>
+                                                                    <option value="NE">Nebraska</option>
+                                                                    <option value="NV">Nevada</option>
+                                                                    <option value="NH">New Hampshire</option>
+                                                                    <option value="NJ">New Jersey</option>
+                                                                    <option value="NM">New Mexico</option>
+                                                                    <option value="NY">New York</option>
+                                                                    <option value="NC">North Carolina</option>
+                                                                    <option value="ND">North Dakota</option>
+                                                                    <option value="OH">Ohio</option>
+                                                                    <option value="OK">Oklahoma</option>
+                                                                    <option value="OR">Oregon</option>
+                                                                    <option value="PA">Pennsylvania</option>
+                                                                    <option value="RI">Rhode Island</option>
+                                                                    <option value="SC">South Carolina</option>
+                                                                    <option value="SD">South Dakota</option>
+                                                                    <option value="TN">Tennessee</option>
+                                                                    <option value="TX">Texas</option>
+                                                                    <option value="UT">Utah</option>
+                                                                    <option value="VT">Vermont</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WA">Washington</option>
+                                                                    <option value="WV">West Virginia</option>
+                                                                    <option value="WI">Wisconsin</option>
+                                                                    <option value="WY">Wyoming</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
+                                                    <p>
+                                                        <a href="javascript:void(0)"
+                                                           data-content="Your personal information is not required for unlawful purposes, but only in order to proceed in this tutorial"
+                                                           data-title="Don't worry!" data-placement="top"
+                                                           data-toggle="popover">
+                                                            Why do you need my personal information?
+                                                        </a>
+                                                    </p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <legend>
+                                                        Security question
+                                                    </legend>
+                                                    <p>
+                                                        Enter security questions in case you lose access to your
+                                                        account. <span class="text-small block">Be sure to pick questions that you will remember the answers to.</span>
+                                                    </p>
+                                                    <div class="panel-group accordion" id="accordion">
+                                                        <div class="panel panel-white">
+                                                            <div class="panel-heading">
+                                                                <h5 class="panel-title">
+                                                                    <a class="accordion-toggle collapsed"
+                                                                       data-toggle="collapse" data-parent="#accordion"
+                                                                       href="#collapseOne">
+                                                                        <i class="icon-arrow"></i> What was the name of
+                                                                        your first stuffed animal?
+                                                                    </a></h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control"
+                                                                               name="stuffedAnimal"
+                                                                               placeholder="Enter the the name of your first stuffed animal">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-white">
+                                                            <div class="panel-heading">
+                                                                <h5 class="panel-title">
+                                                                    <a class="accordion-toggle collapsed"
+                                                                       data-toggle="collapse" data-parent="#accordion"
+                                                                       href="#collapseTwo">
+                                                                        <i class="icon-arrow"></i> What is your
+                                                                        grandfather's first name?
+                                                                    </a></h5>
+                                                            </div>
+                                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control"
+                                                                               name="grandfatherName"
+                                                                               placeholder="Enter your grandfather's first name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-white">
+                                                            <div class="panel-heading">
+                                                                <h5 class="panel-title">
+                                                                    <a class="accordion-toggle collapsed"
+                                                                       data-toggle="collapse" data-parent="#accordion"
+                                                                       href="#collapseThree">
+                                                                        <i class="icon-arrow"></i> In what city your
+                                                                        grandmother live?
+                                                                    </a></h5>
+                                                            </div>
+                                                            <div id="collapseThree" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control"
+                                                                               name="grandmotherCity"
+                                                                               placeholder="Enter your grandmother's city">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                </fieldset>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary btn-o next-step btn-wide pull-right">
+                                                        Next <i class="fa fa-arrow-circle-right"></i>
+                                                    </button>
                                                 </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
+                                            </div>
                                         </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
                                     </div>
+                                    <!-- end: WIZARD STEP 1 -->
+                                    <!-- start: WIZARD STEP 2 -->
+                                    <div id="step-2">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="padding-30">
+                                                    <h2 class="StepTitle">Create an account <span
+                                                            class="text-large block">to manage everything you do with Clip-Two</span>
+                                                    </h2>
+                                                    <p>
+                                                        You’ll enjoy personal services and great benefits including:
+                                                    </p>
+                                                    <p class="text-small">
+                                                    <ul class="no-margin">
+                                                        <li>
+                                                            Access to exclusive releases and limited products.
+                                                        </li>
+                                                        <li>
+                                                            ng-Clip services, benefits and promotions.
+                                                        </li>
+                                                    </ul>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <fieldset>
+                                                    <legend>
+                                                        Account Credential
+                                                    </legend>
+                                                    <div class="form-group">
+                                                        <label class="control-label">
+                                                            Email <span class="symbol required"></span>
+                                                        </label>
+                                                        <input type="email" placeholder="Enter a valid E-mail"
+                                                               class="form-control" name="email">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Password <span class="symbol required"></span>
+                                                                </label>
+                                                                <input type="password" placeholder="Enter a Password"
+                                                                       class="form-control" name="password"
+                                                                       id="password"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Repeat Password <span
+                                                                        class="symbol required"></span>
+                                                                </label>
+                                                                <input type="password" placeholder="Repeat Password"
+                                                                       class="form-control" name="password2"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary btn-o back-step btn-wide pull-left">
+                                                        <i class="fa fa-circle-arrow-left"></i> Back
+                                                    </button>
+                                                    <button class="btn btn-primary btn-o next-step btn-wide pull-right">
+                                                        Next <i class="fa fa-arrow-circle-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end: WIZARD STEP 2 -->
+                                    <!-- start: WIZARD STEP 3 -->
+                                    <div id="step-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="padding-30">
+                                                    <h2 class="StepTitle">Enter billing details</h2>
+                                                    <p class="text-large">
+                                                        You will need to enter your billing address and select your
+                                                        payment method.
+                                                    </p>
+                                                    <p class="text-small">
+                                                        You can use most major credit card, as well as PayPal.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <fieldset>
+                                                    <legend>
+                                                        Payment Method
+                                                    </legend>
+                                                    <label>
+                                                        Payment type
+                                                    </label>
+                                                    <div class="form-group">
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-primary active">
+                                                                <input type="radio" name="paymentMethod" id="option1"
+                                                                       autocomplete="off" value="credit card">
+                                                                <i class="fa fa-cc-visa"></i> <i
+                                                                    class="fa fa-cc-mastercard"></i> Credit Card
+                                                            </label>
+                                                            <label class="btn btn-primary">
+                                                                <input type="radio" name="paymentMethod" id="option2"
+                                                                       autocomplete="off" value="paypal">
+                                                                <i class="fa fa-cc-paypal"></i> PayPal
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>
+                                                            Card Number
+                                                        </label>
+                                                        <input type="text" class="form-control" name="cardNumber"
+                                                               placeholder="Enter Your Card Number">
+                                                    </div>
+                                                    <label>
+                                                        Expires
+                                                    </label>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <div class="form-group">
+                                                                <select class="cs-select cs-skin-slide">
+                                                                    <option value="" disabled>Month</option>
+                                                                    <option value="January">January</option>
+                                                                    <option value="February">February</option>
+                                                                    <option value="March">March</option>
+                                                                    <option value="April">April</option>
+                                                                    <option value="May">May</option>
+                                                                    <option value="June">June</option>
+                                                                    <option value="July">July</option>
+                                                                    <option value="August">August</option>
+                                                                    <option value="September">September</option>
+                                                                    <option value="October">October</option>
+                                                                    <option value="November">November</option>
+                                                                    <option value="December">December</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6">
+                                                            <div class="form-group">
+                                                                <select class="cs-select cs-skin-slide">
+                                                                    <option value="" disabled>Year</option>
+                                                                    <option value="2015">2015</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="2017">2017</option>
+                                                                    <option value="2018">2018</option>
+                                                                    <option value="2019">2019</option>
+                                                                    <option value="2020">2020</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <label>
+                                                                Security code
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-xs-3">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control"
+                                                                               name="securityCode"
+                                                                               placeholder="Security code">
+                                                                    </div>
+                                                                </div>
+                                                                <span class="help-inline col-xs-4">
+																			<a href="javascript:void(0)"
+                                                                               data-content="The security code is a three-digit number on the back of your credit card, immediately following your main card number."
+                                                                               data-title="How to find the security code"
+                                                                               data-placement="top"
+                                                                               data-toggle="popover">
+																				<i class="ti-help-alt text-large text-primary"></i>
+																			</a> </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="form-group">
+                                                    <button class="btn btn-primary btn-o back-step btn-wide pull-left">
+                                                        <i class="fa fa-circle-arrow-left"></i> Back
+                                                    </button>
+                                                    <button class="btn btn-primary btn-o next-step btn-wide pull-right">
+                                                        Next <i class="fa fa-arrow-circle-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end: WIZARD STEP 3 -->
+                                    <!-- start: WIZARD STEP 4 -->
+                                    <div id="step-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="text-center">
+                                                    <h1 class=" ti-check block text-primary"></h1>
+                                                    <h2 class="StepTitle">Congratulations!</h2>
+                                                    <p class="text-large">
+                                                        Your tutorial is complete.
+                                                    </p>
+                                                    <p class="text-small">
+                                                        Thank you for your registration. Your transaction has been
+                                                        completed, and a receipt for your purchase has been emailed to
+                                                        you. You may log into your account to view details of this
+                                                        transaction.
+                                                    </p>
+                                                    <a class="btn btn-primary btn-o go-first" href="javascript:void(0)">
+                                                        Back to first step
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end: WIZARD STEP 4 -->
                                 </div>
-                            </div>
+                            </form>
+                            <!-- end: WIZARD FORM -->
                         </div>
                     </div>
                 </div>
-                <!-- end: FOURTH SECTION -->
+                <!-- start: WIZARD DEMO -->
             </div>
         </div>
     </div>
@@ -2573,19 +2075,21 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/jquery-cookie/jquery.cookie.js"></script>
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="vendor/switchery/switchery.min.js"></script>
+<script src="vendor/selectFx/classie.js"></script>
+<script src="vendor/selectFx/selectFx.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="vendor/jquery-smart-wizard/jquery.smartWizard.js"></script>
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
+<script src="assets/js/form-wizard.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
+        FormWizard.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -79,7 +76,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -945,999 +942,1466 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Documentation</h1>
+                            <span class="mainDescription">Getting started with Clip-Two is easy. Whether you are a master of Sass, building a new app, or making your existing site responsive, we've got you covered.</span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <span>Documentation</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Getting <span class="text-bold">Started</span></h5>
+                            <h2 class="margin-bottom-25 margin-top-25"> What is Clip-Two? </h2>
+                            <p>
+                                Clip-Two is an advanced, responsive dashboard template built with Bootstrap 3. This
+                                template is mobile friendly and ready for you to customize it any way you want to use
+                                it.
+                            </p>
+                            <p>
+                                For the bootstrap css and components, please check the
+                                <a target="_blank" href="http://getbootstrap.com">
+                                    Bootstrap 3
+                                </a>
+                                documentation
+                            </p>
+                            <h2 class="margin-bottom-25 margin-top-25">Template Structure</h2>
+                            <p>
+                                This template has a fixed structure, including the following elements:
+                            </p>
+                            <ul>
+                                <li>
+                                    TopBar (Header)
+                                </li>
+                                <li>
+                                    Sidebar (with Main Navigation Menu)
+                                </li>
+                                <li>
+                                    Sliding Right Sidebar
+                                </li>
+                                <li>
+                                    Content
+                                </li>
+                                <li>
+                                    Footer
+                                </li>
+                            </ul>
+                            <div class="alert alert-info">
+                                The Sidebar becomes a hidden Sliding Sidebar with a screen resolution of at least 992
+                                pixels
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
+                            <h2 class="margin-bottom-25 margin-top-25">Configurations</h2>
+                            <h4>Setup Theme</h4>
+                            <p>
+                                6 different color schemes are available on Clip-Two. If you would like to set your
+                                favorite color, you will just need to add it into the head tag.
+                            </p>
+                            <pre class="prettyprint lang-html">&lt;head&gt;
+  ...
+  &lt;link rel="stylesheet" href="assets/css/themes/theme-2.css" id="skin_color"&gt;
+  ...</pre>
+                            <div class="alert alert-info">
+                                The available color schemes are:
+                                <ul>
+                                    <li>
+                                        theme-1.css
+                                    </li>
+                                    <li>
+                                        theme-2.css
+                                    </li>
+                                    <li>
+                                        theme-3.css
+                                    </li>
+                                    <li>
+                                        theme-4.css
+                                    </li>
+                                    <li>
+                                        theme-5.css
+                                    </li>
+                                    <li>
+                                        theme-6.css
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
-                                    <p class="text-small">
-                                        Store, modify, and extract information from your database.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
+                            <h4 class="margin-top-20">Fixed or Default Header and Footer</h4>
+                            <p>
+                                A fixed header and a sliding footer belong to the Clip-Two default settings. Yet, if you
+                                would like to change these settings, please, proceed as follows:
+                            </p>
+                            <div class="alert alert-info">
+                                from fixed to default Header: remove the class <code>app-navbar-fixed</code> to the
+                                <code>#app</code> div
+                            </div>
+                            <div class="alert alert-info">
+                                from default to fixed Footer: add the class <code>app-footer-fixed</code> to the <code>#app</code>
+                                div
+                            </div>
+                            <p>
+                                You can also combine two or more classes:
+                            </p>
+                            <pre class="prettyprint lang-html">&lt;head&gt;
+...
+&lt;div id="app" class="app-navbar-fixed app-footer-fixed"&gt;
+...</pre>
+                            <h4 class="margin-top-20">Fixed or Default Sidebar</h4>
+                            <p>
+                                A fixed Sidebar belong to the Clip-Two default settings. Yet, if you would like to
+                                change these settings, please, proceed as follows:
+                            </p>
+                            <div class="alert alert-info">
+                                from fixed to default Sidebar: remove the class <code>app-sidebar-fixed</code> to the
+                                <code>#app</code> div
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
+                <div class="container-fluid container-fullw">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
-                                                <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
-                                                    </div>
-                                                </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
-                                                </li>
-                                            </ul>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Clip-Two <span class="text-bold">CSS</span></h5>
+                            <h2 class="margin-bottom-25 margin-top-25"> Getting Started With Clip-Two CSS</h2>
+                            <p>
+                                Clip-Two uses
+                                <a href="http://getbootstrap.com/css/" target="_blank">
+                                    Bootstrap CSS
+                                </a>
+                                that provides global CSS settings, fundamental HTML elements styled and enhanced with
+                                extensible classes, and an advanced grid system.
+                            </p>
+                            <h4 class="margin-top-20">The Grid</h4>
+                            <p>
+                                See how aspects of the Bootstrap grid system work across multiple devices with a handy
+                                table.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th> Extra small devices
+                                            <small>Phones (&lt;768px)</small>
+                                        </th>
+                                        <th> Small devices
+                                            <small>Tablets (≥768px)</small>
+                                        </th>
+                                        <th> Medium devices
+                                            <small>Desktops (≥992px)</small>
+                                        </th>
+                                        <th> Large devices
+                                            <small>Desktops (≥1200px)</small>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Grid behavior</th>
+                                        <td>Horizontal at all times</td>
+                                        <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Container width</th>
+                                        <td>None (auto)</td>
+                                        <td>750px</td>
+                                        <td>970px</td>
+                                        <td>1170px</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Class prefix</th>
+                                        <td><code>.col-xs-</code></td>
+                                        <td><code>.col-sm-</code></td>
+                                        <td><code>.col-md-</code></td>
+                                        <td><code>.col-lg-</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap"># of columns</th>
+                                        <td colspan="4">12</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Column width</th>
+                                        <td class="text-muted">Auto</td>
+                                        <td>~62px</td>
+                                        <td>~81px</td>
+                                        <td>~97px</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Gutter width</th>
+                                        <td colspan="4">30px (15px on each side of a column)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Nestable</th>
+                                        <td colspan="4">Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Offsets</th>
+                                        <td colspan="4">Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-nowrap">Column ordering</th>
+                                        <td colspan="4">Yes</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h5 class="margin-top-20">Example: Stacked-to-horizontal</h5>
+                            <p>
+                                Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid
+                                system that starts out stacked on mobile devices and tablet devices (the extra small to
+                                small range) before becoming horizontal on desktop (medium) devices. Place grid columns
+                                in any <code>.row</code>.
+                            </p>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                                <div class="col-md-1">
+                                    .col-md-1
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-8">
+                                    .col-md-8
+                                </div>
+                                <div class="col-md-4">
+                                    .col-md-4
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-4">
+                                    .col-md-4
+                                </div>
+                                <div class="col-md-4">
+                                    .col-md-4
+                                </div>
+                                <div class="col-md-4">
+                                    .col-md-4
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-6">
+                                    .col-md-6
+                                </div>
+                                <div class="col-md-6">
+                                    .col-md-6
+                                </div>
+                            </div>
+                            <h5 class="margin-top-20">Example: Mobile and desktop</h5>
+                            <p>
+                                Don't want your columns to simply stack in smaller devices? Use the extra small and
+                                medium device grid classes by adding <code>.col-xs-*</code><code>.col-md-*</code> to
+                                your columns. See the example below for a better idea of how it all works.
+                            </p>
+                            <div class="show-grid clearfix">
+                                <div class="col-xs-12 col-md-8">
+                                    .col-xs-12 .col-md-8
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    .col-xs-6 .col-md-4
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-xs-6 col-md-4">
+                                    .col-xs-6 .col-md-4
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    .col-xs-6 .col-md-4
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    .col-xs-6 .col-md-4
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-xs-6">
+                                    .col-xs-6
+                                </div>
+                                <div class="col-xs-6">
+                                    .col-xs-6
+                                </div>
+                            </div>
+                            <h5 class="margin-top-20">Example: Mobile, tablet, desktop</h5>
+                            <p>
+                                Build on the previous example by creating even more dynamic and powerful layouts with
+                                tablet <code>.col-sm-*</code> classes.
+                            </p>
+                            <div class="show-grid clearfix">
+                                <div class="col-xs-12 col-sm-6 col-md-8">
+                                    .col-xs-12 .col-sm-6 .col-md-8
+                                </div>
+                                <div class="col-xs-6 col-md-4">
+                                    .col-xs-6 .col-md-4
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-xs-6 col-sm-4">
+                                    .col-xs-6 .col-sm-4
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    .col-xs-6 .col-sm-4
+                                </div>
+                                <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                                <div class="clearfix visible-xs-block"></div>
+                                <div class="col-xs-6 col-sm-4">
+                                    .col-xs-6 .col-sm-4
+                                </div>
+                            </div>
+                            <h5 class="margin-top-20">Offsetting columns</h5>
+                            <p>
+                                Move columns to the right using <code>.col-md-offset-*</code> classes. These classes
+                                increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code>
+                                moves <code>.col-md-4</code> over four columns.
+                            </p>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-4">
+                                    .col-md-4
+                                </div>
+                                <div class="col-md-4 col-md-offset-4">
+                                    .col-md-4 .col-md-offset-4
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-3 col-md-offset-3">
+                                    .col-md-3 .col-md-offset-3
+                                </div>
+                                <div class="col-md-3 col-md-offset-3">
+                                    .col-md-3 .col-md-offset-3
+                                </div>
+                            </div>
+                            <div class="show-grid clearfix">
+                                <div class="col-md-6 col-md-offset-3">
+                                    .col-md-6 .col-md-offset-3
+                                </div>
+                            </div>
+                            <h5 class="margin-top-20">Nesting columns</h5>
+                            <p>
+                                To nest your content with the default grid, add a new <code>.row</code> and set of
+                                <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested
+                                rows should include a set of columns that add up to 12 or fewer (it is not required that
+                                you use all 12 available columns).
+                            </p>
+                            <div class="show-grid clearfix">
+                                <div class="col-sm-9">
+                                    Level 1: .col-sm-9
+                                    <div class="row show-grid">
+                                        <div class="col-xs-8 col-sm-6">
+                                            Level 2: .col-xs-8 .col-sm-6
                                         </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="col-xs-4 col-sm-6">
+                                            Level 2: .col-xs-4 .col-sm-6
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
-                                        </div>
-                                        <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Direct
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Sites
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Search
-                                                </div>
-                                            </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
-                                            </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <h4 class="margin-top-20">CSS Utilities</h4>
+                            <p>
+                                In addition to the default bootstrap css, Clip-Two includes classes that can help you
+                                speed up your development work
+                            </p>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Margin</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.no-margin</code></code></code></code></td>
+                                    <td>margin: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-0</code></code></code></td>
+                                    <td>margin-bottom: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-5</code></code></code></td>
+                                    <td>margin-bottom: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-10</code></code></code></td>
+                                    <td>margin-bottom: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-15</code></code></code></td>
+                                    <td>margin-bottom: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-20</code></code></code></td>
+                                    <td>margin-bottom: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-25</code></code></code></td>
+                                    <td>margin-bottom: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-bottom-30</code></code></code></td>
+                                    <td>margin-bottom: 30px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-0</code></code></code></td>
+                                    <td>margin-top: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-5</code></code></code></td>
+                                    <td>margin-top: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-10</code></code></code></td>
+                                    <td>margin-top: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-15</code></code></code></td>
+                                    <td>margin-top: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-20</code></code></code></td>
+                                    <td>margin-top: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-25</code></code></code></td>
+                                    <td>margin-top: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-top-30</code></code></code></td>
+                                    <td>margin-top: 30px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-0</code></code></code></td>
+                                    <td>margin-right: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-5</code></code></code></td>
+                                    <td>margin-right: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-10</code></code></code></td>
+                                    <td>margin-right: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-15</code></code></code></td>
+                                    <td>margin-right: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-20</code></code></code></td>
+                                    <td>margin-right: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-25</code></code></code></td>
+                                    <td>margin-right: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-right-30</code></code></code></td>
+                                    <td>margin-right: 30px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-0</code></code></code></td>
+                                    <td>margin-left: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-5</code></code></code></td>
+                                    <td>margin-left: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-10</code></code></code></td>
+                                    <td>margin-left: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-15</code></code></code></td>
+                                    <td>margin-left: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-20</code></code></code></td>
+                                    <td>margin-left: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-25</code></code></code></td>
+                                    <td>margin-left: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.margin-left-30</code></code></code></td>
+                                    <td>margin-left: 30px</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Padding</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.no-padding</code></code></code></code></td>
+                                    <td>padding: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-0</code></code></code></td>
+                                    <td>padding-bottom: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-5</code></code></code></td>
+                                    <td>padding-bottom: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-10</code></code></code></td>
+                                    <td>padding-bottom: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-15</code></code></code></td>
+                                    <td>padding-bottom: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-20</code></code></code></td>
+                                    <td>padding-bottom: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-25</code></code></code></td>
+                                    <td>padding-bottom: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-bottom-30</code></code></code></td>
+                                    <td>padding-bottom: 30px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-0</code></code></code></td>
+                                    <td>padding-top: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-5</code></code></code></td>
+                                    <td>padding-top: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-10</code></code></code></td>
+                                    <td>padding-top: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-15</code></code></code></td>
+                                    <td>padding-top: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-20</code></code></code></td>
+                                    <td>padding-top: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-25</code></code></code></td>
+                                    <td>padding-top: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-top-30</code></code></code></td>
+                                    <td>padding-top: 30px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-0</code></code></code></td>
+                                    <td>padding-right: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-5</code></code></code></td>
+                                    <td>padding-right: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-10</code></code></code></td>
+                                    <td>padding-right: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-15</code></code></code></td>
+                                    <td>padding-right: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-20</code></code></code></td>
+                                    <td>padding-right: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-25</code></code></code></td>
+                                    <td>padding-right: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-right-30</code></code></code></td>
+                                    <td>padding-right: 30px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-0</code></code></code></td>
+                                    <td>padding-left: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-5</code></code></code></td>
+                                    <td>padding-left: 5px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-10</code></code></code></td>
+                                    <td>padding-left: 10px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-15</code></code></code></td>
+                                    <td>padding-left: 15px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-20</code></code></code></td>
+                                    <td>padding-left: 20px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-25</code></code></code></td>
+                                    <td>padding-left: 25px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.padding-left-30</code></code></code></td>
+                                    <td>padding-left: 30px</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Border</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.no-border</code></code></td>
+                                    <td>border: none</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.border-right</code></code></td>
+                                    <td>border-right-style: solid;
+                                        border-right-width: 1px;
+                                        border-color: inherit;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>.border-left</code></code></td>
+                                    <td>border-left-style: solid;
+                                        border-left-width: 1px;
+                                        border-color: inherit;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>.border-top</code></code></td>
+                                    <td>border-top-style: solid;
+                                        border-top-width: 1px;
+                                        border-color: inherit;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>.border-bottom</code></code></td>
+                                    <td>border-bottom-style: solid;
+                                        border-bottom-width: 1px;
+                                        border-color: inherit;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>.border-light</code></code></td>
+                                    <td> border-color: rgba(255, 255, 255, 0.2) (border with light color)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.border-dark</code></code></td>
+                                    <td>border-color: rgba(0, 0, 0, 0.2); (border with dark color)</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Radius</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.no-radius</code></td>
+                                    <td> border-radius: 0</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.radius-3</code></td>
+                                    <td>border-radius: 3px;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.radius-5</code></td>
+                                    <td>border-radius: 5px;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.radius-10</code></td>
+                                    <td>border-radius: 10px;</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Text</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.text-bold</code></td>
+                                    <td>font-weight: bold;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-extra-small</code></td>
+                                    <td>font-size: 11px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-small</code></td>
+                                    <td>font-size: 12px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-extra-small</code></td>
+                                    <td>font-size: 11px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-large </code></td>
+                                    <td>font-size: 16px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-extra-large</code></td>
+                                    <td>font-size: 18px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-orange</code></td>
+                                    <td>color: #f58a5c;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-green</code></td>
+                                    <td>color: #1fbba6;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-blue</code></td>
+                                    <td>color: #5f8295;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-pink</code></td>
+                                    <td>color: #dd5a82;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-purple</code></td>
+                                    <td>color: #dd5a82;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-bricky</code></td>
+                                    <td>color: #894550;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-yellow</code></td>
+                                    <td>color: #ffb848;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-red</code></td>
+                                    <td>color: #e66b6b;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-white</code></td>
+                                    <td>color: white;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-dark</code></td>
+                                    <td>color: rgba(44, 47, 59, 0.4);</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-light</code></td>
+                                    <td>color: rgba(255, 255, 255, 0.6);</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-left</code></td>
+                                    <td>text-align: left;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-right</code></td>
+                                    <td>text-align: right;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-light</code></td>
+                                    <td>color: rgba(255, 255, 255, 0.6);</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-left</code></td>
+                                    <td>text-align: left;</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Height</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.height-155</code></td>
+                                    <td>height: 155px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-180</code></td>
+                                    <td>height: 180px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-200</code></td>
+                                    <td>height: 200px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-230</code></td>
+                                    <td>height: 230px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-250</code></td>
+                                    <td>height: 250px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-270</code></td>
+                                    <td>height: 270px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-300</code></td>
+                                    <td>height: 300px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.height-350</code></td>
+                                    <td>height: 350px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-155</code></td>
+                                    <td>min-height: 155px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-180</code></td>
+                                    <td>min-height: 180px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-200</code></td>
+                                    <td>min-height: 200px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-230</code></td>
+                                    <td>min-height: 230px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-250</code></td>
+                                    <td>min-height: 250px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-270</code></td>
+                                    <td>min-height: 270px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-300</code></td>
+                                    <td>min-height: 300px</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.min-height-350</code></td>
+                                    <td>min-height: 350px</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-border bg-white b-a">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Generic Classes</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><code>.inline</code></td>
+                                    <td>display: inline;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.block</code></td>
+                                    <td>display: block;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.inline-block</code></td>
+                                    <td>display: inline-block;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.no-display</code></td>
+                                    <td>display: none;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.vertical-align-top</code></td>
+                                    <td>vertical-align: top</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.vertical-align-middle</code></td>
+                                    <td>vertical-align: middle;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.vertical-align-bottom</code></td>
+                                    <td>vertical-align: bottom;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.float-none</code></td>
+                                    <td>float: none;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.noTransform</code></td>
+                                    <td>-o-transform: none
+                                        -moz-transform: none
+                                        -ms-transform: none
+                                        -webkit-transform: none
+                                        transform: none
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <h4 class="margin-top-20">Colors</h4>
+                            <p>
+                                You can use these colors to customize buttons, text, backgrounds and more.
+                            </p>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-primary">
+                                        Dark Primary
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-primary">
+                                        Primary
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-primary">
+                                        Light Primary
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-azure">
+                                        Dark Azure
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-azure">
+                                        Azure
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-azure">
+                                        Light Azure
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-blue">
+                                        Dark Blue
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-blue">
+                                        Blue
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-blue">
+                                        Light Blue
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-purple">
+                                        Dark Purple
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-purple">
+                                        Purple
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-purple">
+                                        Light Purple
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-red">
+                                        Dark Red
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-red">
+                                        Red
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-red">
+                                        Light Red
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-bricky">
+                                        Dark Bricky
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-bricky">
+                                        Bricky
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-bricky">
+                                        Light Bricky
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-orange">
+                                        Dark Orange
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-orange">
+                                        Orange
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-orange">
+                                        Light Orange
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-yellow">
+                                        Dark Yellow
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-yellow">
+                                        Yellow
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-yellow">
+                                        Light Yellow
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-beige">
+                                        Dark Beige
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-beige">
+                                        Beige
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-beige">
+                                        Light Beige
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-green">
+                                        Dark Green
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-green">
+                                        Green
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-green">
+                                        Light Green
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-4 text-center no-border bg-dark-grey">
+                                        Dark Grey
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-grey">
+                                        Grey
+                                    </div>
+                                    <div class="col-xs-4 text-center no-border bg-light-grey">
+                                        Light Grey
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 margin-bottom-15">
+                                <div class="show-grid clearfix">
+                                    <div class="col-xs-3 text-center no-border bg-info">
+                                        Info
+                                    </div>
+                                    <div class="col-xs-3 text-center no-border bg-success">
+                                        Success
+                                    </div>
+                                    <div class="col-xs-3 text-center no-border bg-warning">
+                                        Warning
+                                    </div>
+                                    <div class="col-xs-3 text-center no-border bg-danger">
+                                        Danger
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
-                                    </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Components and <span
+                                    class="text-bold">Plugins</span></h5>
+                            <h2 class="margin-bottom-25 margin-top-25"> Plugins </h2>
+                            <h4 class="margin-top-20">jQuery</h4>
+                            <p>
+                                Core Javascript library
+                            </p>
+                            <p>
+                                <a href="http://www.jquery.com" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Twitter Bootstrap v3.x</h4>
+                            <p>
+                                Sleek, intuitive, and powerful front-end framework for faster and easier web development
+                            </p>
+                            <p>
+                                <a href="http://getbootstrap.com" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Font Awesome</h4>
+                            <p>
+                                Font Awesome gives you scalable vector icons that can instantly be customized — size,
+                                color, drop shadow, and anything that can be done with the power of CSS.
+                            </p>
+                            <p>
+                                <a href="http://fortawesome.github.io/Font-Awesome" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Modernizr</h4>
+                            <p>
+                                <strong>Modernizr</strong> is a JavaScript library that detects HTML5 and CSS3 features
+                                in the user’s browser.
+                            </p>
+                            <p>
+                                <a href="http://modernizr.com/" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Moment.js</h4>
+                            <p>
+                                Parse, validate, manipulate, and display dates in JavaScript.
+                            </p>
+                            <p>
+                                <a href="http://momentjs.com/" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">perfect-scrollbar</h4>
+                            <p>
+                                Tiny but perfect jQuery scrollbar plugin.
+                            </p>
+                            <p>
+                                <a href="https://github.com/noraesae/perfect-scrollbar" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Masked Input Plugin</h4>
+                            <p>
+                                It allows a user to more easily enter fixed width input where you would like them to
+                                enter the data in a certain format (dates,phone numbers, etc).
+                            </p>
+                            <p>
+                                <a href="http://digitalbush.com/projects/masked-input-plugin" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Datepicker for Bootstrap</h4>
+                            <p>
+                                Add datepicker picker to field or to any other element.
+                            </p>
+                            <p>
+                                <a href="http://www.eyecon.ro/bootstrap-datepicker" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Bootstrap Timepicker</h4>
+                            <p>
+                                Easily select a time for a text input using your mouse or keyboards arrow keys.
+                            </p>
+                            <p>
+                                <a href="http://jdewit.github.io/bootstrap-timepicker" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Bootstrap date-time Picker</h4>
+                            <p>
+                                Add date-time picker to field or to any other element.
+                            </p>
+                            <p>
+                                <a href="http://eonasdan.github.io/bootstrap-datetimepicker" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Nestable jQuery Plugin</h4>
+                            <p>
+                                Nestable is an interactive hierarchical list. You can drag and drop to rearrange the
+                                order. It even works well on touch-screens.
+                            </p>
+                            <p>
+                                <a href="http://dbushell.com/2012/06/17/nestable-jquery-plugin" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">jsTree</h4>
+                            <p>
+                                jsTree is jquery plugin, that provides interactive trees.
+                            </p>
+                            <p>
+                                <a href="http://www.jstree.com/" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">DataTables</h4>
+                            <p>
+                                DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool,
+                                based upon the foundations of progressive enhancement, which will add advanced
+                                interaction controls to any HTML table
+                            </p>
+                            <p>
+                                <a href="http://datatables.net" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Smart Wizard</h4>
+                            <p>
+                                Smart Wizard is a flexible jQuery plug-in for wizard like interface. It allows to group
+                                contents into sections and so it saves page space and also gives a neat and stylish
+                                interface for users.
+                            </p>
+                            <p>
+                                <a href="http://techlaboratory.net/smartwizard" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">jQuery Validation</h4>
+                            <p>
+                                This jQuery plugin makes simple clientside form validation easy, whilst still offering
+                                plenty of customization options.
+                            </p>
+                            <p>
+                                <a href="http://jqueryvalidation.org" target="_blank"><i class="fa fa-book"></i>
+                                    Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Jcrop</h4>
+                            <p>
+                                Jcrop is the quick and easy way to add image cropping functionality to your web
+                                application. It combines the ease-of-use of a typical jQuery plugin with a powerful
+                                cross-platform DHTML cropping engine that is faithful to familiar desktop graphics
+                                applications.
+                            </p>
+                            <p>
+                                <a href="http://deepliquid.com/content/Jcrop.html" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">jQuery File Upload</h4>
+                            <p>
+                                File Upload widget with multiple file selection, drag&drop support, progress bars,
+                                validation and preview images, audio and video for jQuery.
+                                Supports cross-domain, chunked and resumable file uploads and client-side image
+                                resizing.
+                            </p>
+                            <p>
+                                <a href="http://blueimp.github.io/jQuery-File-Upload" target="_blank"><i
+                                        class="fa fa-book"></i> Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">jQuery Autosize</h4>
+                            <p>
+                                A plugin to automatically adjust textarea height.
+                            </p>
+                            <p>
+                                <a href="http://www.jacklmoore.com/autosize" target="_blank"><i class="fa fa-book"></i>
+                                    Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Select2</h4>
+                            <p>
+                                Select2 is a jQuery based replacement for select boxes. It supports searching, remote
+                                data sets, and infinite scrolling of results
+                            </p>
+                            <p>
+                                <a href="http://ivaynberg.github.io/select2" target="_blank"><i class="fa fa-book"></i>
+                                    Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Ladda</h4>
+                            <p>
+                                Buttons with built-in loading indicators.
+                            </p>
+                            <p>
+                                <a href="https://github.com/hakimel/Ladda" target="_blank"><i class="fa fa-book"></i>
+                                    Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">FullCalendar</h4>
+                            <p>
+                                FullCalendar is a jQuery plugin that provides a full-sized, drag &amp; drop event
+                                calendar like the one below.
+                                It uses AJAX to fetch events on-the-fly and is easily configured to use your own feed
+                                format.
+                                It is visually customizable with a rich API.
+                            </p>
+                            <p>
+                                <a href="http://fullcalendar.io/" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Sweet Alert</h4>
+                            <p>
+                                A beautiful replacement for Javascript's "Alert"
+                            </p>
+                            <p>
+                                <a href="http://tristanedwards.me/sweetalert" target="_blank"><i class="fa fa-book"></i>
+                                    Official Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">Chart.js</h4>
+                            <p>
+                                Simple, clean and engaging charts for designers and developers
+                            </p>
+                            <p>
+                                <a href="http://www.chartjs.org/" target="_blank"><i class="fa fa-book"></i> Official
+                                    Documentation</a>
+                            </p>
+                            <hr/>
+                            <h4 class="margin-top-20">jQuery Sparklines</h4>
+                            <p>
+                                This jQuery plugin generates sparklines (small inline charts) directly in the browser
+                                using data supplied either inline in the HTML, or via javascript. .
+                            </p>
+                            <p>
+                                <a href="omnipotent.net/jquery.sparkline" target="_blank"><i class="fa fa-book"></i>
+                                    Official Documentation</a>
+                            </p>
+                            <hr/>
                         </div>
                     </div>
                 </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
-                                            </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
-                                                </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
-                                                </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
-                                                </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How are you?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
-                                        </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Changelog <span class="text-bold">Entries</span>
+                            </h5>
+                            <p>
+                                <span class="text-gray"> version </span><span class="text-bold text-dark">1.2</span> -
+                                Mar 14, 2015
+                            </p>
+                            <ul>
+                                <li>
+                                    <span class="label label-success">NEW</span>
+                                    <h4 class="margin-top-10">HTML version</h4>
+                                    <p>
+                                        Clip-Two HTML Version with Bootstrap 3 &amp; jQuery
+                                    </p>
+                                    <p>
+                                        <a class="dropdown-off-sidebar ng-scope"
+                                           href="http://www.cliptheme.com/demo/clip-two/Html-Admin/STANDARD/index.html"
+                                           target="_blank"><i class="fa fa-external-link"></i> View</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-success">NEW</span>
+                                    <h4 class="margin-top-10">Right To Left HTML version</h4>
+                                    <p>
+                                        Clip-Two HTML Version RTL with Bootstrap 3 &amp; jQuery
+                                    </p>
+                                    <p>
+                                        <a class="dropdown-off-sidebar ng-scope"
+                                           href="http://www.cliptheme.com/demo/clip-two/Html-Admin/RTL/index.html"
+                                           target="_blank"><i class="fa fa-external-link"></i> View</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-warning">FIXED</span>
+                                    <h4 class="margin-top-10">Improvements &amp; Minor Bug Fixes</h4>
+                                </li>
+                            </ul>
+                            <hr/>
+                            <p>
+                                <span class="text-gray"> version </span><span class="text-bold text-dark">1.1</span> -
+                                Feb 25, 2015
+                            </p>
+                            <ul>
+                                <li>
+                                    <span class="label label-success">NEW</span>
+                                    <h4 class="margin-top-10">Chat Directive</h4>
+                                    <p>
+                                        An AngularJS Chat Directive exclusively for Clip-Two
+                                        <br/>
+                                        <strong>N.b.</strong> for best performance from version 1.0 you must replace
+                                        style.css (assets/css/style.css) and _chat.scsss
+                                        (master/sass/partials/_chat.scsss)
+                                    </p>
+                                    <p>
+                                        <a class="dropdown-off-sidebar ng-scope" ng-click="toggle('off-sidebar')"><i
+                                                class="fa fa-external-link"></i> Open off-sidebar for demo and click a
+                                            name in the list.</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-success">NEW</span>
+                                    <h4 class="margin-top-10">RTL version of Clip-Two</h4>
+                                    <p>
+                                        RTL is the writing system known as right-to-left (RTL) in which script runs from
+                                        the right-hand side of a page and concludes on the left-hand side, such as in
+                                        Arabic, Hebrew and Urdu.
+                                    </p>
+                                    <p>
+                                        <a class="dropdown-off-sidebar ng-scope" href="../RTL/" target="_blank"><i
+                                                class="fa fa-external-link"></i> View</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-success">NEW</span>
+                                    <h4 class="margin-top-10">X-Editable Elements</h4>
+                                    <p>
+                                        Angular-xeditable is a bundle of AngularJS directives that allows you to create
+                                        editable elements.
+                                        Such technique is also known as click-to-edit or edit-in-place.
+                                    </p>
+                                    <p>
+                                        <a ui-sref="app.form.xeditable"><i class="fa fa-external-link"></i> View</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-info">UPGRADE</span>
+                                    <h4 class="margin-top-10">AngularJS and Related Extras</h4>
+                                    <p>
+                                        Version 1.3.13
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-info">UPGRADE</span>
+                                    <h4 class="margin-top-10">UI Bootstrap</h4>
+                                    <p>
+                                        Version 0.12.1
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-warning">FIXED</span>
+                                    <h4 class="margin-top-10">Mouse wheel scroll problem in IE</h4>
+                                    <p>
+                                        From version 1.0 you must replace style.css (assets/css/style.css) and
+                                        _top-navbar.scsss (master/sass/partials/layout-elements/_top-navbar.scsss)
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="label label-warning">FIXED</span>
+                                    <h4 class="margin-top-10">Improvements &amp; Minor Bug Fixes</h4>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- end: FOURTH SECTION -->
             </div>
         </div>
     </div>
@@ -2574,18 +3038,12 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="vendor/switchery/switchery.min.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
-<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
-<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

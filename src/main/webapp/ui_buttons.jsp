@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -47,6 +44,7 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color"/>
     <!-- end: CLIP-TWO CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="vendor/ladda-bootstrap/ladda-themeless.min.css" rel="stylesheet" media="screen">
     <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 </head>
 <!-- end: HEAD -->
@@ -79,7 +77,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -91,7 +89,7 @@ To change this template use File | Settings | File Templates.
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="active open">
                         <a href="javascript:void(0)">
                             <div class="item-content">
                                 <div class="item-media">
@@ -108,7 +106,7 @@ To change this template use File | Settings | File Templates.
                                     <span class="title"> Elements </span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="ui_buttons.jsp">
                                     <span class="title"> Buttons </span>
                                 </a>
@@ -945,256 +943,408 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Buttons</h1>
+                            <span class="mainDescription">Button design is usually a subtle element to a web design, but it can have a significant impact on the overall look and usability of the site. </span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li>
+                                <span>UI Elements</span>
+                            </li>
+                            <li class="active">
+                                <span>Buttons</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
+                <!-- start: DEFAULT BUTOONS -->
                 <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
-                                    </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="row buttons-widget">
+                        <div class="col-md-12 margin-bottom-30">
+                            <h5 class="over-title">Default <span class="text-bold">Buttons</span></h5>
+                            <p>
+                                Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or
+                                <code>&lt;input&gt;</code> element.
+                            </p>
+                            <!-- Standard grey button with gradient -->
+                            <button type="button" class="btn btn-wide btn-default">
+                                Default
+                            </button>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button type="button" class="btn btn-wide btn-primary">
+                                Primary
+                            </button>
+                            <!-- Indicates a successful or positive action -->
+                            <button type="button" class="btn btn-wide btn-success">
+                                Success
+                            </button>
+                            <!-- Contextual button for informational alert messages -->
+                            <button type="button" class="btn btn-wide btn-info">
+                                Info
+                            </button>
+                            <!-- Indicates caution should be taken with this action -->
+                            <button type="button" class="btn btn-wide btn-warning">
+                                Warning
+                            </button>
+                            <!-- Indicates a dangerous or potentially negative action -->
+                            <button type="button" class="btn btn-wide btn-danger">
+                                Danger
+                            </button>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title">Outlined <span class="text-bold">Buttons</span></h5>
+                            <p>
+                                Use the <code>.btn-o</code> class for outlined buttons.
+                            </p>
+                            <button type="button" class="btn btn-o btn-wide btn-default">
+                                Default
+                            </button>
+                            <button type="button" class="btn btn-wide btn-o btn-primary">
+                                Primary
+                            </button>
+                            <button type="button" class="btn btn-wide btn-o btn-success">
+                                Success
+                            </button>
+                            <button type="button" class="btn btn-wide btn-o btn-info">
+                                Info
+                            </button>
+                            <button type="button" class="btn btn-wide btn-o btn-warning">
+                                Warning
+                            </button>
+                            <button type="button" class="btn btn-wide  btn-o btn-danger">
+                                Danger
+                            </button>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
+                    </div>
+                </div>
+                <!-- end: DEFAULT BUTOONS -->
+                <!-- start: COLORFUL BUTOONS -->
+                <div class="container-fluid container-fullw">
+                    <div class="row buttons-widget">
+                        <div class="col-md-12">
+                            <h5 class="over-title">Colorful <span class="text-bold">Buttons</span></h5>
+                            <p>
+                                Use any of the available button classes to quickly create a styled button.
+                            </p>
+                            <p class="text-small">
+                                Using color to add meaning to a button only provides a visual indication, which will not
+                                be conveyed to users of assistive technologies &ndash; such as screen readers. Ensure
+                                that information denoted by the color is either obvious from the content itself (the
+                                visible text of the button), or is included through alternative means, such as
+                                additional text hidden with the <code>.sr-only</code> class.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Azure Button</h5>
                                     <p class="text-small">
-                                        Store, modify, and extract information from your database.
+                                        Add class <code>.btn-azure</code>, <code>.btn-light-azure</code> or <code>.btn-dark-azure</code>
+                                        to your button.
                                     </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
+                                    <button type="button" class="btn btn-wide btn-azure">
+                                        Azure
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-azure">
+                                        Light Azure
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-azure">
+                                        Dark Azure
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Blue Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-blue</code>, <code>.btn-light-blue</code> or <code>.btn-dark-blue</code>
+                                        to your button.
                                     </p>
+                                    <button type="button" class="btn btn-wide btn-blue">
+                                        Blue
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-blue">
+                                        Light Blue
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-blue">
+                                        Dark Blue
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Purple Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-purple</code>, <code>.btn-light-purple</code> or <code>.btn-dark-purple</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-purple">
+                                        Purple
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-purple">
+                                        Light Purple
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-purple">
+                                        Dark Purple
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Red Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-red</code>, <code>.btn-light-red</code> or <code>.btn-dark-red</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-red">
+                                        Red
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-red">
+                                        Light Red
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-red">
+                                        Dark Red
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Orange Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-orange</code>, <code>.btn-light-orange</code> or <code>.btn-dark-orange</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-orange">
+                                        Orange
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-orange">
+                                        Light Orange
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-orange">
+                                        Dark Orange
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Yellow Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-yellow</code>, <code>.btn-light-yellow</code> or <code>.btn-dark-yellow</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-yellow">
+                                        Yellow
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-yellow">
+                                        Light Yellow
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-yellow">
+                                        Dark Yellow
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Green Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-green</code>, <code>.btn-light-green</code> or <code>.btn-dark-green</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-green">
+                                        Green
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-green">
+                                        Light Green
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-green">
+                                        Dark Green
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Beige Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-beige</code>, <code>.btn-light-beige</code> or <code>.btn-dark-beige</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-beige">
+                                        Beige
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-beige">
+                                        Light Beige
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-beige">
+                                        Dark Beige
+                                    </button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h5 class="margin-top-30">Grey Button</h5>
+                                    <p class="text-small">
+                                        Add class <code>.btn-grey</code>, <code>.btn-light-grey</code> or <code>.btn-dark-grey</code>
+                                        to your button.
+                                    </p>
+                                    <button type="button" class="btn btn-wide btn-grey">
+                                        Grey
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-light-grey">
+                                        Light Grey
+                                    </button>
+                                    <button type="button" class="btn btn-wide btn-dark-grey">
+                                        Dark Grey
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
+                <!-- end: COLORFUL BUTOONS -->
+                <!-- start: BUTTON OPTIONS -->
+                <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
-                                                <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
-                                                    </div>
-                                                </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Options</span></h5>
+                            <p>
+                                You can change the style and the state of the buttons using minimal markup.
+                            </p>
+                            <div class="row buttons-widget">
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Square Buttons
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
                                         </div>
                                         <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
-                                                </div>
+                                            <p>
+                                                Do you like the square buttons? Add <code> .btn-squared </code>
+                                                to change its shape.
+                                            </p>
+                                            <button type="button" class="btn btn-wide btn-default btn-squared">
+                                                Squared
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-primary btn-squared btn-o">
+                                                Squared
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-info btn-squared">
+                                                Squared
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-success btn-squared">
+                                                Squared <i class="fa fa-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Sizes
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Direct
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Sites
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Search
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                Fancy larger or smaller buttons? Add <code> .btn-lg </code>
+                                                , <code> .btn-sm </code>
+                                                , or <code> .btn-xs </code>
+                                                for additional sizes.
+                                            </p>
+                                            <p>
+                                                <button type="button" class="btn btn-primary btn-lg">
+                                                    Large button
+                                                </button>
+                                            </p>
+                                            <p>
+                                                <button type="button" class="btn btn-primary">
+                                                    Default button
+                                                </button>
+                                            </p>
+                                            <p>
+                                                <button type="button" class="btn btn-primary btn-sm">
+                                                    Small button
+                                                </button>
+                                            </p>
+                                            <p>
+                                                <button type="button" class="btn btn-primary btn-xs">
+                                                    Extra small
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Disabled State
                                             </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                Add the <code> disabled </code>
+                                                attribute to <code> &lt;button&gt; </code>
+                                                buttons.
+                                            </p>
+                                            <button type="button" class="btn btn-wide btn-primary" disabled="disabled">
+                                                Disabled
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-azure" disabled="disabled">
+                                                Disabled
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-red" disabled="disabled">
+                                                Disabled
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-green" disabled="disabled">
+                                                Disabled
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Active State
                                             </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                if you need to force the <code>:active</code> appearance, add <code>.active</code>.
+                                            </p>
+                                            <button type="button" class="btn btn-wide btn-primary active">
+                                                Active
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-azure active">
+                                                Active
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-red active">
+                                                Active
+                                            </button>
+                                            <button type="button" class="btn btn-wide btn-green active">
+                                                Active
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Block level buttons
                                             </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                Create block level buttons&mdash;those that span the full width of a
+                                                parent&mdash; by adding <code> .btn-block </code>
+                                                .
+                                            </p>
+                                            <p>
+                                                <button class="btn btn-primary btn-block">
+                                                    Block level button
+                                                </button>
+                                            </p>
+                                            <p>
+                                            <div class="btn-group btn-group-justified">
+                                                <a class="btn btn-dark-red" href="javascript:;">
+                                                    Tools
+                                                </a>
+                                                <a class="btn btn-dark-green" href="javascript:;">
+                                                    Help
+                                                </a>
+                                                <a class="btn btn-dark-blue" href="javascript:;">
+                                                    Contact
+                                                </a>
+                                            </div>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1202,742 +1352,785 @@ To change this template use File | Settings | File Templates.
                         </div>
                     </div>
                 </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
-                <div class="container-fluid container-fullw bg-white">
+                <!-- end: BUTTON OPTIONS -->
+                <!-- start: BUTTON GROUPS -->
+                <div class="container-fluid container-fullw">
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
-                                    </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Button <span class="text-bold">Groups</span></h5>
+                            <p>
+                                Group a series of buttons together on a single line with the button group.
+                            </p>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Basic example
                                             </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Wrap a series of buttons with <code> .btn </code>
+                                                in <code> .btn-group </code>
+                                                .
+                                            </p>
+                                            <div class="space12">
+                                                <div class="btn-group">
+                                                    <a class="btn btn-primary btn-o active" href="javascript:;">
+                                                        Tools
+                                                    </a>
+                                                    <a class="btn btn-primary btn-o hidden-xs" href="javascript:;">
+                                                        Settings
+                                                    </a>
+                                                    <a class="btn btn-primary btn-o" href="javascript:;">
+                                                        Help
+                                                    </a>
+                                                    <a class="btn btn-primary btn-o" href="javascript:;">
+                                                        Contact
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Button toolbar
                                             </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div
+                                                class="btn-toolbar"&gt;</code> for more complex components.
+                                            </p>
+                                            <div class="space12">
+                                                <div class="btn-toolbar">
+                                                    <div aria-label="First group" role="group" class="btn-group">
+                                                        <button class="btn btn-primary" type="button">
+                                                            1
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">
+                                                            2
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">
+                                                            3
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">
+                                                            4
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-primary" type="button">
+                                                            5
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">
+                                                            6
+                                                        </button>
+                                                        <button class="btn btn-primary" type="button">
+                                                            7
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-primary" type="button">
+                                                            8
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Vertical variation
                                             </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
-                                                </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
-                                                </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
-                                                </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How are you?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
                                         </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Make a set of buttons appear vertically stacked rather than horizontally
+                                            </p>
+                                            <div class="space12">
+                                                <div class="btn-group-vertical">
+                                                    <a class="btn btn-wide btn-orange" href="javascript:;">
+                                                        Tools
+                                                    </a>
+                                                    <a class="btn btn-wide btn-orange active" href="javascript:;">
+                                                        Settings
+                                                    </a>
+                                                    <a class="btn btn-wide btn-orange" href="javascript:;">
+                                                        Help
+                                                    </a>
+                                                    <a class="btn btn-wide btn-orange" href="javascript:;">
+                                                        Contact
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FOURTH SECTION -->
+                <!-- end: BUTTON GROUPS -->
+                <!-- start: DROPDOWN BUTTONS -->
+                <div class="container-fluid container-fullw bg-white">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Dropdown <span class="text-bold">Buttons</span></h5>
+                            <p>
+                                Add dropdown menus to nearly anything with this simple plugin, including the navbar,
+                                tabs, and pills.
+                            </p>
+                            <!-- Single button -->
+                            <div class="btn-group">
+                                <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">
+                                    Button dropdown <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation" class="dropdown-header">
+                                        Dropdown header
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Something else here
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li role="presentation" class="dropdown-header">
+                                        Dropdown header
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Separated link
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger">
+                                    Action
+                                </button>
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation" class="dropdown-header">
+                                        Dropdown header
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Something else here
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li role="presentation" class="dropdown-header">
+                                        Dropdown header
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Separated link
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr/>
+                            <p>
+                            <p>
+                                Dropdown <span class="text-bold"> Different Styles</span>
+                            </p>
+                            <div class="btn-group">
+                                <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Dark Left <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu dropdown-dark">
+                                    <li>
+                                        <a href="#">
+                                            Action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Something else here
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Dark Right <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu dropdown-dark pull-right">
+                                    <li>
+                                        <a href="#">
+                                            Action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Something else here
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Light Left <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu dropdown-light">
+                                    <li>
+                                        <a href="#">
+                                            Action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Something else here
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Light Right <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu dropdown-light pull-right">
+                                    <li>
+                                        <a href="#">
+                                            Action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Another action
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Something else here
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: DROPDOWN BUTTONS -->
+                <!-- start: LOADING INDICATOR -->
+                <div class="container-fluid container-fullw">
+                    <div class="row buttons-widget">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Buttons with <span class="text-bold">loading indicator</span>
+                            </h5>
+                            <p>
+                                Buttons with built-in loading indicators, effectively bridging the gap between action
+                                and feedback. <span class="text-bold">Click the buttons to see the effect.</span>
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5> Expand </h5>
+                                    <p>
+                                        <button data-style="expand-left" class="btn btn-wide btn-primary ladda-button">
+                                            <span class="ladda-label">expand-left</span><span
+                                                class="ladda-spinner"></span>
+                                        </button>
+                                        <button class="btn btn-wide btn-primary ladda-button" data-style="expand-right">
+                                            <span class="ladda-label">expand-right</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-primary ladda-button" data-style="expand-up">
+                                            <span class="ladda-label">expand-up</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-primary ladda-button" data-style="expand-down">
+                                            <span class="ladda-label">expand-down</span>
+                                        </button>
+                                    </p>
+                                    <h5> Zoom </h5>
+                                    <p>
+                                        <button class="btn btn-wide btn-warning ladda-button" data-style="contract">
+                                            <span class="ladda-label">contract</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-warning ladda-button" data-style="zoom-in">
+                                            <span class="ladda-label">zoom-in</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-warning ladda-button" data-style="zoom-out">
+                                            <span class="ladda-label">zoom-out</span>
+                                        </button>
+                                    </p>
+                                    <h5> Slide </h5>
+                                    <p>
+                                        <button class="btn btn-wide btn-danger ladda-button" data-style="slide-left">
+                                            <span class="ladda-label">slide-left</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-danger ladda-button" data-style="slide-right">
+                                            <span class="ladda-label">slide-right</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-danger ladda-button" data-style="slide-up">
+                                            <span class="ladda-label">slide-up</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-danger ladda-button" data-style="slide-down">
+                                            <span class="ladda-label">slide-down</span>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5> Built-in progress bar </h5>
+                                    <p class="progress-demo">
+                                        <button class="btn btn-wide btn-primary ladda-button" data-style="expand-right">
+                                            <span class="ladda-label">expand-right</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-primary ladda-button" data-style="expand-left">
+                                            <span class="ladda-label">expand-left</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-primary ladda-button" data-style="contract">
+                                            <span class="ladda-label">contract</span>
+                                        </button>
+                                    </p>
+                                    <h5> Sizes </h5>
+                                    <p class="progress-demo">
+                                        <button class="btn btn-wide btn-info btn-xs ladda-button"
+                                                data-style="expand-right" data-size="xs">
+                                            <span class="ladda-label">extra small</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-info btn-sm ladda-button"
+                                                data-style="expand-right" data-size="s">
+                                            <span class="ladda-label">small</span>
+                                        </button>
+                                        <button class="btn btn-wide btn-info btn-lg ladda-button"
+                                                data-style="expand-right" data-size="l">
+                                            <span class="ladda-label">large</span>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: LOADING INDICATOR -->
+                <!-- start: BUTTONS WITH ICONS -->
+                <div class="container-fluid container-fullw bg-white">
+                    <div class="row buttons-widget">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Buttons with <span class="text-bold">icons</span>
+                            </h5>
+                            <p>
+                                Add icons to your buttons.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Font Awesome
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Examples to use buttons with font awesome icons.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-wide btn-primary" href="#"><i class="fa fa-share"></i></a>
+                                                <a class="btn btn-wide btn-red" href="#"><i
+                                                        class="fa fa-times fa fa-white"></i></a>
+                                                <a class="btn btn-wide btn-blue" href="#"><i
+                                                        class="fa fa-arrow-circle-right"></i></a>
+                                                <a class="btn btn-wide btn-green" href="#"><i
+                                                        class="fa fa-user fa fa-white"></i></a>
+                                            </p>
+                                            <p class="text-small">
+                                                Buttons with both text and font awesome icon.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-wide btn-red" href="#"><i class="fa fa-trash-o"></i>
+                                                    Delete Item</a>
+                                                <a class="btn btn-wide btn-primary" href="#"><i class="fa fa-plus"></i>
+                                                    Add Item</a>
+                                                <a class="btn btn-wide btn-purple">
+                                                    Listen <i class="fa fa-headphones"></i>
+                                                </a>
+                                                <a class="btn btn-wide btn-blue" href="#"><i class="fa fa-plus"></i>
+                                                    Submit Entry</a>
+                                            </p>
+                                            <p>
+                                                Toolbar made with font awesome icons.
+                                            </p>
+                                            <div class="space12">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-step-backward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-backward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-play"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-stop"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-forward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-step-forward"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Glyphicons
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                Examples to use buttons with glyphicon icons.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-wide btn-primary" href="#"><i
+                                                        class="glyphicon glyphicon-share"></i></a>
+                                                <a class="btn btn-wide btn-red" href="#"><i
+                                                        class="glyphicon glyphicon-remove-circle"></i></a>
+                                                <a class="btn btn-wide btn-blue" href="#"><i
+                                                        class="glyphicon glyphicon-circle-arrow-right"></i></a>
+                                                <a class="btn btn-wide btn-green" href="#"><i
+                                                        class="glyphicon glyphicon-user"></i></a>
+                                            </p>
+                                            <p class="text-small">
+                                                Buttons with both text and glyphicon icon.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-wide btn-red" href="#"><i
+                                                        class="glyphicon glyphicon-trash"></i> Delete Item</a>
+                                                <a class="btn btn-wide btn-primary" href="#"><i
+                                                        class="glyphicon glyphicon-plus"></i> Add Item</a>
+                                                <a class="btn btn-wide btn-purple">
+                                                    Listen <i class="glyphicon glyphicon-headphones"></i>
+                                                </a>
+                                                <a class="btn btn-wide btn-blue" href="#"><i
+                                                        class="glyphicon glyphicon-plus"></i> Submit Entry</a>
+                                            </p>
+                                            <p>
+                                                Toolbar made with glyphicon icons.
+                                            </p>
+                                            <div class="space12">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-step-backward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-backward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-play"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-stop"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-forward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="glyphicon glyphicon-step-forward"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Themify Icons
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                Examples to use buttons with themify icons.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-wide btn-primary" href="#"><i
+                                                        class="ti-share"></i></a>
+                                                <a class="btn btn-wide btn-red" href="#"><i class="ti-close"></i></a>
+                                                <a class="btn btn-wide btn-blue" href="#"><i
+                                                        class="ti-arrow-circle-right"></i></a>
+                                                <a class="btn btn-wide btn-green" href="#"><i class="ti-user"></i></a>
+                                            </p>
+                                            <p class="text-small">
+                                                Buttons with both text and themify icon.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-wide btn-red" href="#"><i class="ti-trash"></i> Delete
+                                                    Item</a>
+                                                <a class="btn btn-wide btn-primary" href="#"><i class="ti-plus"></i> Add
+                                                    Item</a>
+                                                <a class="btn btn-wide btn-purple">
+                                                    Listen <i class="ti-headphone"></i>
+                                                </a>
+                                                <a class="btn btn-wide btn-blue" href="#"><i class="ti-plus"></i> Submit
+                                                    Entry</a>
+                                            </p>
+                                            <p>
+                                                Toolbar made with themify icons.
+                                            </p>
+                                            <div class="space12">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary">
+                                                        <i class="ti-control-skip-backward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="ti-control-backward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="ti-control-play"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="ti-control-stop"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="ti-control-forward"></i>
+                                                    </button>
+                                                    <button class="btn btn-primary">
+                                                        <i class="ti-control-skip-forward"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Animated Buttons
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>
+                                                Modern and subtle styles &amp; effects for buttons
+                                            </p>
+                                            <button type="button"
+                                                    class="btn btn-primary btn-wide btn-scroll btn-scroll-top ti-shopping-cart">
+                                                <span>Add to cart</span>
+                                            </button>
+                                            <button type="button"
+                                                    class="btn btn-success btn-wide btn-scroll btn-scroll-left ti-settings">
+                                                <span>Settings</span>
+                                            </button>
+                                            <button type="button"
+                                                    class="btn btn-info btn-wide btn-scroll btn-scroll-top fa fa-heart">
+                                                <span>Love</span>
+                                            </button>
+                                            <button type="button"
+                                                    class="btn btn-danger btn-wide btn-scroll btn-scroll-left fa fa-truck">
+                                                <span>Truck</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Social List
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="social-icons">
+                                                <ul>
+                                                    <li class="social-twitter" tooltip="Twitter"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Twitter
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-dribbble" tooltip="Dribbble"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Dribbble
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-facebook" tooltip="Facebook"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Facebook
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-google" tooltip="Google" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Google+
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-linkedin" tooltip="LinkedIn"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            LinkedIn
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-youtube" tooltip="YouTube"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            YouTube
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-rss" tooltip="RSS" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            RSS
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-behance" tooltip="Behance"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Behance
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-dropbox" tooltip="Dropbox"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Dropbox
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-github" tooltip="Github" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Github
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-spotify" tooltip="Spotify"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Spotify
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-stumbleupon" tooltip="Stumbleupon"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Stumbleupon
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-skype" tooltip="Skype" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Skype
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-tumblr" tooltip="Tumblr" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Tumblr
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-spotify" tooltip="Spotify"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Spotify
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-vimeo" tooltip="Vimeo" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Vimeo
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-wordpress" tooltip="Wordpress"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Wordpress
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-xing" tooltip="Xing" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Xing
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-yahoo" tooltip="Yahoo" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Yahoo
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-vk" tooltip="VK" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            VK
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-instagram" tooltip="Instagram"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Instagram
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-reddit" tooltip="Reddit" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Reddit
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-flickr" tooltip="Flickr" tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Flickr
+                                                        </a>
+                                                    </li>
+                                                    <li class="social-foursquare" tooltip="Foursquare"
+                                                        tooltip-placement="top">
+                                                        <a target="_blank" href="#">
+                                                            Foursquare
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: BUTTONS WITH ICONS -->
             </div>
         </div>
     </div>
@@ -2575,17 +2768,17 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/switchery/switchery.min.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+<script src="vendor/ladda-bootstrap/spin.min.js"></script>
+<script src="vendor/ladda-bootstrap/ladda.min.js"></script>
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
+<script src="assets/js/ui-buttons.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
+        UIButtons.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->

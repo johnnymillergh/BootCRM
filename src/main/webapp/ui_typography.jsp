@@ -1,17 +1,14 @@
 <%--
-Created by IntelliJ IDEA.
-User: johnny
-Date: 8/2/18
-Time: 11:23 PM
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Johnny Miller
+  Date: 8/2/18
+  Time: 11:44 PM
+  To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- Template Name: Clip-Two - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: ClipTheme -->
-<!--[if IE 8]>
-<html class="ie8" lang="en"><![endif]-->
-<!--[if IE 9]>
-<html class="ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -79,7 +76,7 @@ To change this template use File | Settings | File Templates.
                     <span>Main Navigation</span>
                 </div>
                 <ul class="main-navigation-menu">
-                    <li class="active open">
+                    <li>
                         <a href="index.jsp">
                             <div class="item-content">
                                 <div class="item-media">
@@ -91,7 +88,7 @@ To change this template use File | Settings | File Templates.
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="active open">
                         <a href="javascript:void(0)">
                             <div class="item-content">
                                 <div class="item-media">
@@ -168,7 +165,7 @@ To change this template use File | Settings | File Templates.
                                     <span class="title"> Nestable List </span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="ui_typography.jsp">
                                     <span class="title"> Typography </span>
                                 </a>
@@ -945,256 +942,770 @@ To change this template use File | Settings | File Templates.
         <!-- end: TOP NAVBAR -->
         <div class="main-content">
             <div class="wrap-content container" id="container">
-                <!-- start: DASHBOARD TITLE -->
-                <section id="page-title" class="padding-top-15 padding-bottom-15">
+                <!-- start: PAGE TITLE -->
+                <section id="page-title">
                     <div class="row">
-                        <div class="col-sm-7">
-                            <h1 class="mainTitle">Dashboard</h1>
-                            <span class="mainDescription">overview &amp; stats </span>
+                        <div class="col-sm-8">
+                            <h1 class="mainTitle">Typography</h1>
+                            <span class="mainDescription">The style, arrangement, or appearance of typeset matter </span>
                         </div>
-                        <div class="col-sm-5">
-                            <!-- start: MINI STATS WITH SPARKLINE -->
-                            <ul class="mini-stats pull-right">
-                                <li>
-                                    <div class="sparkline-1">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">18304</strong>
-                                        <p class="text-small no-margin">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-2">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;3,833</strong>
-                                        <p class="text-small no-margin">
-                                            Earnings
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sparkline-3">
-                                        <span></span>
-                                    </div>
-                                    <div class="values">
-                                        <strong class="text-dark">&#36;848</strong>
-                                        <p class="text-small no-margin">
-                                            Referrals
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end: MINI STATS WITH SPARKLINE -->
-                        </div>
+                        <ol class="breadcrumb">
+                            <li>
+                                <span>UI Elements</span>
+                            </li>
+                            <li class="active">
+                                <span>Typography</span>
+                            </li>
+                        </ol>
                     </div>
                 </section>
-                <!-- end: DASHBOARD TITLE -->
-                <!-- start: FEATURED BOX LINKS -->
+                <!-- end: PAGE TITLE -->
+                <!-- start: HEADINGS -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Headings</span></h5>
+                            <p>
+                                All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are
+                                available. <code>.h1</code> through <code>.h6</code> classes are also available, for
+                                when you want to match the font styling of a heading but still want your text to be
+                                displayed inline.
+                            </p>
+                            <p class="text-small">
+                                Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code>
+                                tag or the <code>.small</code>
+                                class.
+                            </p>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <h1>h1. Heading
+                                            <small>Secondary text</small>
+                                        </h1>
+                                    </td>
+                                    <td class="type-info">Semibold 36px</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2>h2. Heading
+                                            <small>Secondary text</small>
+                                        </h2>
+                                    </td>
+                                    <td class="type-info">Semibold 30px</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>h3. Heading
+                                            <small>Secondary text</small>
+                                        </h3>
+                                    </td>
+                                    <td class="type-info">Semibold 24px</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>h4. Heading
+                                            <small>Secondary text</small>
+                                        </h4>
+                                    </td>
+                                    <td class="type-info">Semibold 18px</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h5>h5. Heading
+                                            <small>Secondary text</small>
+                                        </h5>
+                                    </td>
+                                    <td class="type-info">Semibold 14px</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>h6. Heading
+                                            <small>Secondary text</small>
+                                        </h6>
+                                    </td>
+                                    <td class="type-info">Semibold 12px</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid container-fullw">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15">Paragraphs &amp; <span class="text-bold">lead body copy</span>
+                            </h5>
+                            <p>
+                                Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a
+                                <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code>
+                                and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom
+                                margin of half their computed line-height (10px by default).
+                            </p>
+                            <p>
+                                Make a paragraph stand out by adding <code>.lead</code>.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-white">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        Paragraph
+                                    </div>
+                                </div>
                                 <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Users</h2>
-                                    <p class="text-small">
-                                        To add users, you need to be signed in as the super user.
+                                    <p>
+                                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id
+                                        dolor id nibh ultricies vehicula.
                                     </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
+                                    <p>
+                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                        mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non
+                                        commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                                        Donec ullamcorper nulla non metus auctor fringilla.
+                                    </p>
+                                    <p>
+                                        Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit
+                                        non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi
+                                        erat porttitor ligula, eget lacinia odio sem nec elit.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
-                                <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Orders</h2>
-                                    <p class="text-small">
-                                        The Manage Orders tool provides a view of all your orders.
-                                    </p>
-                                    <p class="cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
-                                    </p>
+                        <div class="col-md-6">
+                            <div class="panel panel-white">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        Lead body copy
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius text-center">
                                 <div class="panel-body">
-                                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i
-                                            class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                                    <h2 class="StepTitle">Manage Database</h2>
-                                    <p class="text-small">
-                                        Store, modify, and extract information from your database.
+                                    <p class="lead">
+                                        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis
+                                        mollis, est non commodo luctus.
                                     </p>
-                                    <p class="links cl-effect-1">
-                                        <a href>
-                                            view more
-                                        </a>
+                                    <p class="lead">
+                                        Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo
+                                        luctus, nisi erat porttitor ligula.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FEATURED BOX LINKS -->
-                <!-- start: FIRST SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
+                <!-- end: HEADINGS -->
+                <!-- start: INLINE TEXT ELEMENTS -->
+                <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Inline text elements</span>
+                            </h5>
+                            <p>
+                                This elements are meant to make your life easier by providing simple default styles for
+                                all of the most basic typographical needs.
+                            </p>
                             <div class="row">
-                                <div class="col-md-7 col-lg-8">
-                                    <div class="panel panel-white no-radius" id="visits">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Visits </h4>
-                                            <ul class="panel-heading-tabs border-light">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Marked text
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For highlighting a run of text due to its relevance in another context,
+                                                use the <code>&lt;mark&gt;</code> tag.
+                                            </p>
+                                            <p class="text-large">
+                                                You can use the mark tag to
+                                                <mark>
+                                                    highlight
+                                                </mark>
+                                                text.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Deleted text
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For indicating blocks of text that have been deleted use the <code>&lt;del&gt;</code>
+                                                tag.
+                                            </p>
+                                            <p class="text-large">
+                                                <del>This line of text is meant to be treated as deleted text.</del>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Strikethrough text
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For indicating blocks of text that are no longer relevant use the <code>&lt;s&gt;</code>
+                                                tag.
+                                            </p>
+                                            <p class="text-large">
+                                                <s>This line of text is meant to be treated as no longer accurate.</s>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Inserted text
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For indicating additions to the document use the
+                                                <code>&lt;ins&gt;</code> tag.
+                                            </p>
+                                            <p class="text-large">
+                                                <ins>This line of text is meant to be treated as an addition to the
+                                                    document.
+                                                </ins>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Underlined text
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                To underline text use the <code>&lt;u&gt;</code> tag.
+                                            </p>
+                                            <p class="text-large">
+                                                <u>This line of text will render as underlined</u>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Small text
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For de-emphasizing inline or blocks of text, use the
+                                                <code>&lt;small&gt;</code> tag to set text at 85% the size of the
+                                                parent.
+                                            </p>
+                                            <p>
+                                                <small>This line of text will render as underlined</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Small and Large text classes
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For emphasizing or de-emphasizing inline or blocks of text, use the
+                                                <code>.text-small</code> or <code>.text-large</code> class.
+                                            </p>
+                                            <p>
+                                                <span class="text-large">Text Large</span>, Text Normal, <span
+                                                    class="text-small">Text Small</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Bold
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For emphasizing a snippet of text with a heavier font-weight.
+                                            </p>
+                                            <p class="text-large">
+                                                The following snippet of text is <strong>rendered as bold text</strong>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Italics
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For emphasizing a snippet of text with italics.
+                                            </p>
+                                            <p class="text-large">
+                                                The following snippet of text is <em>rendered as italicized text</em>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Transformation classes
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Transform text in components with text capitalization classes.
+                                            </p>
+                                            <p class="text-large text-lowercase">
+                                                Lowercased text.
+                                            </p>
+                                            <p class="text-large text-uppercase">
+                                                Uppercased text.
+                                            </p>
+                                            <p class="text-large text-capitalize">
+                                                Capitalized text.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Abbreviations
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for
+                                                abbreviations and acronyms to show the expanded version on hover.
+                                            </p>
+                                            <p class="text-large">
+                                                An abbreviation of the word attribute is <abbr
+                                                    title="attribute">attr</abbr>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-white min-height-200">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Initialism
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Add <code>.initialism</code> to an abbreviation for a slightly smaller
+                                                font-size.
+                                            </p>
+                                            <p class="text-large">
+                                                <abbr class="initialism" title="HyperText Markup Language">HTML</abbr>
+                                                is the best thing since sliced bread.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="panel panel-white">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Alignment classes
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Easily realign text to components with text alignment classes.
+                                            </p>
+                                            <p class="text-left text-large">
+                                                Left aligned text.
+                                            </p>
+                                            <p class="text-center text-large">
+                                                Center aligned text.
+                                            </p>
+                                            <p class="text-right text-large">
+                                                Right aligned text.
+                                            </p>
+                                            <p class="text-justify text-large">
+                                                Justified text.
+                                            </p>
+                                            <p class="text-nowrap text-large">
+                                                No wrap text.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid container-fullw">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-white">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        Text Color
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="text-small">
+                                        You can change the color of text using specific classes.
+                                    </p>
+                                    <p class="text-muted text-large">
+                                        Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+                                    </p>
+                                    <p class="text-primary text-large">
+                                        Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                    <p class="text-success text-large">
+                                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                    </p>
+                                    <p class="text-info text-large">
+                                        Maecenas sed diam eget risus varius blandit sit amet non magna.
+                                    </p>
+                                    <p class="text-warning text-large">
+                                        Etiam porta sem malesuada magna mollis euismod.
+                                    </p>
+                                    <p class="text-danger text-large">
+                                        Donec ullamcorper nulla non metus auctor fringilla.
+                                    </p>
+                                    <p class="text-azure text-large">
+                                        Cum sociis natoque penatibus et magnis dis parturient montes.
+                                    </p>
+                                    <p class="text-blue text-large">
+                                        Nullam quis risus eget urna mollis ornare vel eu leo.
+                                    </p>
+                                    <p class="text-purple text-large">
+                                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                    </p>
+                                    <p class="text-orange text-large">
+                                        Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+                                    </p>
+                                    <p class="text-beige text-large">
+                                        Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                    <p class="text-green text-large">
+                                        Etiam porta sem malesuada magna mollis euismod.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-transparent">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        Blockquotes
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>Default blockquote</h5>
+                                    <p class="text-small">
+                                        Wrap <code>&lt;blockquote&gt;</code> around any <abbr
+                                            title="HyperText Markup Language">HTML</abbr> as the quote. For straight
+                                        quotes, we recommend a <code>&lt;p&gt;</code>.
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                            erat a ante.
+                                        </p>
+                                    </blockquote>
+                                    <h5>Naming a source</h5>
+                                    <p class="text-small">
+                                        Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of
+                                        the source work in <code>&lt;cite&gt;</code>.
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                            erat a ante.
+                                        </p>
+                                        <footer>
+                                            Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </footer>
+                                    </blockquote>
+                                    <h5>Alternate displays</h5>
+                                    <p class="text-small">
+                                        Add <code>.blockquote-reverse</code> for a blockquote with right-aligned
+                                        content.
+                                    </p>
+                                    <blockquote class="blockquote-reverse">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                            erat a ante.
+                                        </p>
+                                        <footer>
+                                            Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid container-fullw bg-white">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-transparent min-height-200">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        Addresses
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Present contact information for the nearest ancestor or the entire body of work.
+                                        Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.
+                                    </p>
+                                    <div class="well">
+                                        <address>
+                                            <strong>Twitter, Inc.</strong>
+                                            <br>
+                                            795 Folsom Ave, Suite 600
+                                            <br>
+                                            San Francisco, CA 94107
+                                            <br>
+                                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                                        </address>
+                                        <address>
+                                            <strong>Full Name</strong>
+                                            <br>
+                                            <a href="mailto:#">
+                                                first.last@example.com
+                                            </a>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-transparent min-height-200">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        Wells
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Use the well as a simple effect on an element to give it an inset effect.
+                                    </p>
+                                    <div class="well">
+                                        Look, I'm in a well!
+                                    </div>
+                                    <div class="well well-lg">
+                                        Look, I'm in a large well!
+                                    </div>
+                                    <div class="well well-sm">
+                                        Look, I'm in a small well!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: INLINE TEXT ELEMENTS -->
+                <!-- start: LISTS -->
+                <div class="container-fluid container-fullw">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Lists</span></h5>
+                            <p>
+                                Lists are helpful for, well, lists of things. Didn't see that coming did you! There are
+                                baked-in styles for a number of different unordered list styles, as well as ordered and
+                                definition lists.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Unordered
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                A list of items in which the order does not explicitly matter.
+                                            </p>
+                                            <ul>
                                                 <li>
-                                                    <div class="pull-right">
-                                                        <div class="btn-group">
-                                                            <a class="padding-10" data-toggle="dropdown">
-                                                                <i class="ti-more-alt "></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-light" role="menu">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Another action
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        Something else here
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                                                    Lorem ipsum dolor sit amet
                                                 </li>
                                                 <li>
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span
-                                                            class="percentage">%</span>
-                                                    </div>
+                                                    Consectetur adipiscing elit
                                                 </li>
-                                                <li class="panel-tools">
-                                                    <a data-original-title="Refresh" data-toggle="tooltip"
-                                                       data-placement="top"
-                                                       class="btn btn-transparent btn-sm panel-refresh" href="#"><i
-                                                            class="ti-reload"></i></a>
+                                                <li>
+                                                    Integer molestie lorem at massa
+                                                </li>
+                                                <li>
+                                                    Facilisis in pretium nisl aliquet
+                                                </li>
+                                                <li>
+                                                    Nulla volutpat aliquam velit
+                                                    <ul>
+                                                        <li>
+                                                            Phasellus iaculis neque
+                                                        </li>
+                                                        <li>
+                                                            Purus sodales ultricies
+                                                        </li>
+                                                        <li>
+                                                            Vestibulum laoreet porttitor sem
+                                                        </li>
+                                                        <li>
+                                                            Ac tristique libero volutpat at
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Faucibus porta lacus fringilla vel
+                                                </li>
+                                                <li>
+                                                    Aenean sit amet erat nunc
+                                                </li>
+                                                <li>
+                                                    Eget porttitor lorem
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div collapse="visits" class="panel-wrapper">
-                                            <div class="panel-body">
-                                                <div class="height-350">
-                                                    <canvas id="chart1" class="full-width"></canvas>
-                                                    <div class="margin-top-20">
-                                                        <div class="inline pull-left">
-                                                            <div id="chart1Legend" class="chart-legend"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-lg-4">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-heading border-light">
-                                            <h4 class="panel-title"> Acquisition </h4>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Ordered
+                                            </div>
                                         </div>
                                         <div class="panel-body">
-                                            <h3 class="inline-block no-margin">26</h3> visitors on-line
-                                            <div class="progress progress-xs no-radius">
-                                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                     style="width: 40%;">
-                                                    <span class="sr-only"> 40% Complete</span>
-                                                </div>
+                                            <p class="margin-bottom-30">
+                                                A list of items in which the order does explicitly matter.
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet
+                                                </li>
+                                                <li>
+                                                    Consectetur adipiscing elit
+                                                </li>
+                                                <li>
+                                                    Integer molestie lorem at massa
+                                                </li>
+                                                <li>
+                                                    Facilisis in pretium nisl aliquet
+                                                </li>
+                                                <li>
+                                                    Nulla volutpat aliquam velit
+                                                </li>
+                                                <li>
+                                                    Faucibus porta lacus fringilla vel
+                                                </li>
+                                                <li>
+                                                    Aenean sit amet erat nunc
+                                                </li>
+                                                <li>
+                                                    Eget porttitor lorem
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Unstyled
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">15</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 80%;">
-                                                            <span class="sr-only"> 80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Direct
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">7</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                             style="width: 60%;">
-                                                            <span class="sr-only"> 60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Sites
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h4 class="no-margin">4</h4>
-                                                    <div class="progress progress-xs no-radius no-margin">
-                                                        <div class="progress-bar progress-bar-warning"
-                                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                             aria-valuemax="100" style="width: 40%;">
-                                                            <span class="sr-only"> 40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                    Search
-                                                </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                Remove the default <code>list-style</code> and left margin on list items
+                                                (immediate children only). <strong>This only applies to immediate
+                                                children list items</strong>, meaning you will need to add the class for
+                                                any nested lists as well.
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    Lorem ipsum dolor sit amet
+                                                </li>
+                                                <li>
+                                                    Facilisis in pretium nisl aliquet
+                                                </li>
+                                                <li>
+                                                    Nulla volutpat aliquam velit
+                                                    <ul>
+                                                        <li>
+                                                            Phasellus iaculis neque
+                                                        </li>
+                                                        <li>
+                                                            Purus sodales ultricies
+                                                        </li>
+                                                        <li>
+                                                            Vestibulum laoreet porttitor sem
+                                                        </li>
+                                                        <li>
+                                                            Ac tristique libero volutpat at
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Faucibus porta lacus fringilla vel
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Inline List
                                             </div>
-                                            <div class="row margin-top-30">
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">26</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Mac OS X
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-up text-green"></i><span
-                                                            class="value">62</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Windows
-                                                </div>
-                                                <div class="col-xs-4 text-center">
-                                                    <div class="rate">
-                                                        <i class="fa fa-caret-down text-red"></i><span
-                                                            class="value">12</span><span class="percentage">%</span>
-                                                    </div>
-                                                    Other OS
-                                                </div>
-                                            </div>
-                                            <div class="margin-top-10">
-                                                <div class="height-180">
-                                                    <canvas id="chart2" class="full-width"></canvas>
-                                                    <div class="inline pull-left legend-xs">
-                                                        <div id="chart2Legend" class="chart-legend"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="margin-bottom-30">
+                                                Place all list items on a single line with <code>display:
+                                                inline-block;</code> and some light padding.
+                                            </p>
+                                            <ul class="list-inline">
+                                                <li>
+                                                    Lorem ipsum
+                                                </li>
+                                                <li>
+                                                    Phasellus iaculis
+                                                </li>
+                                                <li>
+                                                    Nulla volutpat
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -1202,742 +1713,197 @@ To change this template use File | Settings | File Templates.
                         </div>
                     </div>
                 </div>
-                <!-- end: FIRST SECTION -->
-                <!-- start: SECOND SECTION -->
+                <!-- end: LISTS -->
+                <!-- start: DESCRIPTION -->
                 <div class="container-fluid container-fullw bg-white">
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-body">
-                                    <div class="partition-light-grey padding-15 text-center margin-bottom-20">
-                                        <h4 class="no-margin">Monthly Statistics</h4>
-                                        <span class="text-light">based on the major browsers</span>
-                                    </div>
-                                    <div id="accordion" class="panel-group accordion accordion-white no-margin">
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseOne" data-parent="#accordion"
-                                                       data-toggle="collapse" class="accordion-toggle padding-15">
-                                                        <i class="icon-arrow"></i>
-                                                        This Month <span class="label label-danger pull-right">3</span>
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse in" id="collapseOne">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">4909</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">3857</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1789</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">612</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel no-radius">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a href="#collapseTwo" data-parent="#accordion"
-                                                       data-toggle="collapse"
-                                                       class="accordion-toggle padding-15 collapsed">
-                                                        <i class="icon-arrow"></i>
-                                                        Last Month
-                                                    </a></h4>
-                                            </div>
-                                            <div class="panel-collapse collapse" id="collapseTwo">
-                                                <div class="panel-body no-padding partition-light-grey">
-                                                    <table class="table">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center">1</td>
-                                                            <td>Google Chrome</td>
-                                                            <td class="center">5228</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">2</td>
-                                                            <td>Mozilla Firefox</td>
-                                                            <td class="center">2853</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">3</td>
-                                                            <td>Safari</td>
-                                                            <td class="center">1948</td>
-                                                            <td><i class="fa fa-caret-up text-green"></i></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center">4</td>
-                                                            <td>Internet Explorer</td>
-                                                            <td class="center">456</td>
-                                                            <td><i class="fa fa-caret-down text-red"></i></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">New Users</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="text-center">
-                                        <span class="mini-pie"> <canvas id="chart3" class="full-width"></canvas> <span>450</span> </span>
-                                        <span class="inline text-large no-wrap">Acquisition</span>
-                                    </div>
-                                    <div class="margin-top-20 text-center legend-xs inline">
-                                        <div id="chart3Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: SECOND SECTION -->
-                <!-- start: THIRD SECTION -->
-                <div class="container-fluid container-fullw padding-bottom-10">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-light">
-                                    <h4 class="panel-title">Users</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="padding-10">
-                                        <img width="50" height="50" src="assets/images/avatar-1.jpg"
-                                             class="img-circle pull-left" alt="">
-                                        <h4 class="no-margin inline-block padding-5">Peter Clark <span
-                                                class="block text-small text-left">UI Designer</span></h4>
-                                        <div class="pull-right padding-15">
-                                            <span class="text-small text-bold text-green"><i
-                                                    class="fa fa-dot-circle-o"></i> on-line</span>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-heart-o text-red"></i> 250
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <a class="text-dark" href="#">
-                                                    <i class="fa fa-bookmark-o text-green"></i> 20
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
-                                        </div>
-                                    </div>
-                                    <div class="tabbable no-margin no-padding">
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="active padding-top-5 padding-left-5">
-                                                <a data-toggle="tab" href="#users_followers">
-                                                    Followers
-                                                </a>
-                                            </li>
-                                            <li class="padding-top-5">
-                                                <a data-toggle="tab" href="#users_following">
-                                                    Following
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="users_followers" class="tab-pane padding-bottom-5 active">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-1-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">UI Designer</span><span>Peter Clark</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-2-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Content Designer</span><span>Nicole Bell</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div id="users_following" class="tab-pane padding-bottom-5">
-                                                <div class="panel-scroll height-200">
-                                                    <table class="table no-margin">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-3-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Visual Designer</span><span>Steven Thompson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-5-small.jpg">
-                                                            </td>
-                                                            <td><span class="text-small block text-light">Senior Designer</span><span>Kenneth Ross</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="center"><img alt="image" class="img-circle"
-                                                                                    src="assets/images/avatar-4-small.jpg">
-                                                            </td>
-                                                            <td><span
-                                                                    class="text-small block text-light">Web Editor</span><span>Ella Patterson</span>
-                                                            </td>
-                                                            <td class="center">
-                                                                <div class="cl-effect-13">
-                                                                    <a href>
-                                                                        view more
-                                                                    </a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Specialization</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <canvas id="chart4" class="full-width"></canvas>
-                                    <div class="margin-top-20 padding-bottom-5 inline">
-                                        <div id="chart4Legend" class="chart-legend"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="clearfix padding-5 space5">
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">90%</span>
-                                                <span class="text-light">Satisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <div class="border-right border-dark">
-                                                <span class="text-bold block text-extra-large">2%</span>
-                                                <span class="text-light">Unsatisfied</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4 text-center no-padding">
-                                            <span class="text-bold block text-extra-large">8%</span>
-                                            <span class="text-light">NA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end: THIRD SECTION -->
-                <!-- start: FOURTH SECTION -->
-                <div class="container-fluid container-fullw bg-white">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Description</span></h5>
+                            <p>
+                                A list of terms with their associated descriptions.
+                            </p>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-success margin-top-10">253 Sales</span>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Default Description
                                             </div>
-                                            <div class="sparkline-4 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <dl>
+                                                <dt>
+                                                    Description lists
+                                                </dt>
+                                                <dd>
+                                                    A description list is perfect for defining terms.
+                                                </dd>
+                                                <dt>
+                                                    Euismod
+                                                </dt>
+                                                <dd>
+                                                    Vestibulum id ligula porta felis euismod semper eget lacinia odio
+                                                    sem nec elit.
+                                                </dd>
+                                                <dd>
+                                                    Donec id elit non mi porta gravida at eget metus.
+                                                </dd>
+                                                <dt>
+                                                    Malesuada porta
+                                                </dt>
+                                                <dd>
+                                                    Etiam porta sem malesuada magna mollis euismod.
+                                                </dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-white no-radius">
-                                        <div class="panel-body padding-20 text-center">
-                                            <div class="space10">
-                                                <h5 class="text-dark no-margin">Today</h5>
-                                                <h2 class="no-margin">
-                                                    <small>$</small>
-                                                    1,450
-                                                </h2>
-                                                <span class="badge badge-danger margin-top-10">253 Sales</span>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Horizontal description
                                             </div>
-                                            <div class="sparkline-5 space10">
-                                                <span></span>
-                                            </div>
-                                            <span class="text-white-transparent"><i class="fa fa-clock-o"></i> 1 hour ago</span>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Activities</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="timeline-xs margin-top-15 margin-bottom-15">
-                                        <li class="timeline-item success">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    2 minutes ago
-                                                </div>
-                                                <p>
-                                                    <a class="text-info" href>
-                                                        Steven
-                                                    </a>
-                                                    has completed his account.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    12:30
-                                                </div>
-                                                <p>
-                                                    Staff Meeting
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item danger">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    11:11
-                                                </div>
-                                                <p>
-                                                    Completed new layout.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item info">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Thu, 12 Jun
-                                                </div>
-                                                <p>
-                                                    Contacted
-                                                    <a class="text-info" href>
-                                                        Microsoft
-                                                    </a>
-                                                    for license upgrades.
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Tue, 10 Jun
-                                                </div>
-                                                <p>
-                                                    Started development new site
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Sun, 11 Apr
-                                                </div>
-                                                <p>
-                                                    Lunch with
-                                                    <a class="text-info" href>
-                                                        Nicole
-                                                    </a>
-                                                    .
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item warning">
-                                            <div class="margin-left-15">
-                                                <div class="text-muted text-small">
-                                                    Wed, 25 Mar
-                                                </div>
-                                                <p>
-                                                    server Maintenance.
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="panel panel-white no-radius">
-                                <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Chat</h4>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <div class="panel-scroll height-330 perfect-scrollbar" id="chatBox">
-                                        <ol class="discussion">
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 12:58
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, Nicole
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How are you?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am good
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Glad to see you ;)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 13:10
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        What do you think about my new Dashboard?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Sunday, Feb 9, 15:28
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Alo...
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Are you there?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Hi, i am here
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Your Dashboard is great
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="messages-date">
-                                                Friday, Feb 7, 23:39
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        How does the binding and digesting work in AngularJS?, Peter?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        oh that's your question?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        little reduntant, no?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        literally we get the question daily
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        I know. I, however, am not a nerd, and want to know
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="self">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Peter Clark
-                                                    </div>
-                                                    <div class="message-text">
-                                                        for this type of question, wouldn't it be better to try Google?
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="other">
-                                                <div class="message">
-                                                    <div class="message-name">
-                                                        Nicole Bell
-                                                    </div>
-                                                    <div class="message-text">
-                                                        Lucky for us :)
-                                                    </div>
-                                                    <div class="message-avatar">
-                                                        <img src="assets/images/avatar-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="message-bar">
-                                    <div class="message-inner">
-                                        <a class="link icon-only" href="#"><i class="fa fa-camera"></i></a>
-                                        <div class="message-area">
-                                            <textarea placeholder="Message"></textarea>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Make terms and descriptions in <code>&lt;dl&gt;</code> line up
+                                                side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s,
+                                                but when the navbar expands, so do these.
+                                            </p>
+                                            <dl class="dl-horizontal">
+                                                <dt>
+                                                    Description lists
+                                                </dt>
+                                                <dd>
+                                                    A description list is perfect for defining terms.
+                                                </dd>
+                                                <dt>
+                                                    Euismod
+                                                </dt>
+                                                <dd>
+                                                    Vestibulum id ligula porta felis euismod semper eget lacinia odio
+                                                    sem nec elit.
+                                                </dd>
+                                                <dd>
+                                                    Donec id elit non mi porta gravida at eget metus.
+                                                </dd>
+                                                <dt>
+                                                    Malesuada porta
+                                                </dt>
+                                                <dd>
+                                                    Etiam porta sem malesuada magna mollis euismod.
+                                                </dd>
+                                                <dt>
+                                                    Felis euismod semper eget lacinia
+                                                </dt>
+                                                <dd>
+                                                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                                                    nibh, ut fermentum massa justo sit amet risus.
+                                                </dd>
+                                            </dl>
                                         </div>
-                                        <a class="link" href="#">
-                                            Send
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end: FOURTH SECTION -->
+                <!-- end: DESCRIPTION -->
+                <!-- start: CODE -->
+                <div class="container-fluid container-fullw">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="over-title margin-bottom-15"><span class="text-bold">Code</span></h5>
+                            <p>
+                                A list of terms with their associated descriptions.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Inline Code
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Wrap inline snippets of code with <code>&lt;code&gt;</code>.
+                                            </p>
+                                            <p class="text-large">
+                                                For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                User input
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Use the <code>&lt;kbd&gt;</code> to indicate input that is typically
+                                                entered via keyboard.
+                                            </p>
+                                            <p class="text-large">
+                                                To switch directories, type <kbd>cd</kbd> followed by the name of the
+                                                directory.
+                                            </p>
+                                            <p class="text-large">
+                                                To edit settings, press <kbd>ctrl</kbd> + <kbd>E</kbd>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Basic block
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to
+                                                escape any angle brackets in the code for proper rendering.
+                                            </p>
+                                            <p class="text-large">
+                                            <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+                                            </p>
+                                            <p class="text-small">
+                                                You may optionally add the <code>.pre-scrollable</code> class, which
+                                                will set a max-height of 350px and provide a y-axis scrollbar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="panel panel-transparent">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                Variables
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="text-small">
+                                                For indicating variables use the <code>&lt;var&gt;</code> tag.
+                                            </p>
+                                            <p class="text-large">
+                                                <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: CODE -->
             </div>
         </div>
     </div>
@@ -2574,18 +2540,12 @@ To change this template use File | Settings | File Templates.
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="vendor/switchery/switchery.min.js"></script>
 <!-- end: MAIN JAVASCRIPTS -->
-<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="vendor/Chart.js/Chart.min.js"></script>
-<script src="vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
-<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
 <!-- start: CLIP-TWO JAVASCRIPTS -->
 <script src="assets/js/main.js"></script>
 <!-- start: JavaScript Event Handlers for this page -->
-<script src="assets/js/index.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
-        Index.init();
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->
