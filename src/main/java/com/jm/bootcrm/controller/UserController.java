@@ -1,7 +1,7 @@
-package com.jm.controller;
+package com.jm.bootcrm.controller;
 
-import com.jm.pojo.User;
-import com.jm.service.UserService;
+import com.jm.bootcrm.pojo.User;
+import com.jm.bootcrm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +16,7 @@ import java.util.Map;
  * Description:
  *
  * @title: UserController
- * @package: com.jm.controller
+ * @package: com.jm.bootcrm.controller
  * @author: Johnny Miller (锺俊) (johnnysviva@outlook.com)
  * @date: 8/2/18 11:19 PM
  * @version: V1.0

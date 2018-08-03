@@ -1,10 +1,10 @@
-package com.jm.pojo;
+package com.jm.bootcrm.pojo;
 
 /**
  * Description:
  *
  * @title: User
- * @package: com.jm.controller
+ * @package: com.jm.bootcrm.controller
  * @author: Johnny Miller (锺俊) (johnnysviva@outlook.com)
  * @date: 8/2/18 11:19 PM
  * @version: V1.0

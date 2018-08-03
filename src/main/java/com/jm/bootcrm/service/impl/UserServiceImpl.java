@@ -1,8 +1,8 @@
-package com.jm.service.impl;
+package com.jm.bootcrm.service.impl;
 
-import com.jm.dao.UserDao;
-import com.jm.pojo.User;
-import com.jm.service.UserService;
+import com.jm.bootcrm.dao.UserDao;
+import com.jm.bootcrm.pojo.User;
+import com.jm.bootcrm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.Map;
  * Description:
  *
  * @title: UserServiceImpl
- * @package: com.jm.controller
+ * @package: com.jm.bootcrm.controller
  * @author: Johnny Miller (锺俊) (johnnysviva@outlook.com)
  * @date: 8/2/18 11:19 PM
  * @version: V1.0
