@@ -10,16 +10,16 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-    <!-- 扫描web相关的bean -->
+    <!-- Scan component like controller, service etc. -->
     <context:component-scan base-package="com.jm"/>
 
-    <!-- 开启SpringMVC注解模式 -->
+    <!-- Enable Spring MVC annotation mode -->
     <mvc:annotation-driven/>
 
-    <!-- 静态资源默认servlet配置 -->
-    <mvc:default-servlet-handler/>
+    <!-- Default servlet handler: to enable accessing static resources -->
+    <!--<mvc:default-servlet-handler/>-->
 
-    <!-- 配置jsp 显示ViewResolver -->
+    <!-- View resolver's configuration -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value=""/>

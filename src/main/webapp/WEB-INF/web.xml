@@ -8,7 +8,7 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
-    <!-- 编码过滤器 -->
+    <!-- Encoding filter's configuration -->
     <filter>
         <filter-name>encodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -22,11 +22,11 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- 配置DispatcherServlet -->
+    <!-- Config DispatcherServlet -->
     <servlet>
         <servlet-name>SpringMVC</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!-- 配置springMVC需要加载的配置文件-->
+        <!-- Init parameter: to load configuration file-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:spring-*.xml</param-value>
@@ -36,7 +36,12 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SpringMVC</servlet-name>
-        <!-- 匹配所有请求，此处也可以配置成 *.do 形式 -->
-        <url-pattern>/</url-pattern>
+        <!-- Mapping urls like *.do -->
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SpringMVC</servlet-name>
+        <!-- Mapping urls like *.do -->
+        <url-pattern>*.action</url-pattern>
     </servlet-mapping>
 </web-app>
