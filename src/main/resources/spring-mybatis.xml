@@ -10,10 +10,10 @@
        http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <!-- 配置数据库相关参数properties的属性：${url} -->
+    <!-- Database configuration -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
-    <!-- 数据库连接池 -->
+    <!-- Data source configuration -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
@@ -26,31 +26,31 @@
         <property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
     </bean>
 
-    <!-- 配置SqlSessionFactory对象 -->
+    <!-- Mapper scanner configuration -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!-- 注入sqlSessionFactory -->
+        <!-- Inject sqlSessionFactory -->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <!--TODO: 给出需要扫描Dao接口包-->
+        <!--TODO: Specific every package that contains DAO interface -->
         <property name="basePackage" value="com.jm.bootcrm.dao"/>
     </bean>
 
-    <!-- 配置扫描Dao接口包，动态实现Dao接口，注入到spring容器中 -->
+    <!-- Config sqlSessionFactory  -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <!-- 注入数据库连接池 -->
+        <!-- Inject data source -->
         <property name="dataSource" ref="dataSource"/>
-        <!-- 扫描model包 使用别名 -->
+        <!-- Scan persistence object for mybatis alias -->
         <property name="typeAliasesPackage" value="com.jm.bootcrm.pojo"/>
-        <!-- 扫描sql配置文件:mapper需要的xml文件 -->
+        <!-- Scan mapper -->
         <property name="mapperLocations" value="classpath:mapper/**/*Mapper.xml"/>
     </bean>
 
-    <!-- 配置事务管理器 -->
+    <!-- Config transactionManager -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <!-- 注入数据库连接池 -->
+        <!-- Inject data source -->
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <!-- 配置基于注解的声明式事务 -->
+    <!-- Enable annotation mode for transactionManager -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
 </beans>
