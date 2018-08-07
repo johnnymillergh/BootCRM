@@ -31,7 +31,7 @@
         <!-- Inject sqlSessionFactory -->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!--TODO: Specific every package that contains DAO interface -->
-        <property name="basePackage" value="com.jm.bootcrm.dao"/>
+        <property name="basePackage" value="com.jm.bootcrm.basic.dao"/>
     </bean>
 
     <!-- Config sqlSessionFactory  -->
@@ -39,7 +39,7 @@
         <!-- Inject data source -->
         <property name="dataSource" ref="dataSource"/>
         <!-- Scan persistence object for mybatis alias -->
-        <property name="typeAliasesPackage" value="com.jm.bootcrm.pojo"/>
+        <property name="typeAliasesPackage" value="com.jm.bootcrm.basic.pojo"/>
         <!-- Scan mapper -->
         <property name="mapperLocations" value="classpath:mapper/**/*Mapper.xml"/>
     </bean>
