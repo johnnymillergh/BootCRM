@@ -9,7 +9,6 @@
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd">
-
     <!-- Database configuration -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
@@ -21,6 +20,7 @@
         <property name="password" value="${jdbc.password}"/>
         <property name="maxPoolSize" value="${c3p0.maxPoolSize}"/>
         <property name="minPoolSize" value="${c3p0.minPoolSize}"/>
+        <property name="maxStatements" value="${c3p0.maxStatements}"/>
         <property name="autoCommitOnClose" value="${c3p0.autoCommitOnClose}"/>
         <property name="checkoutTimeout" value="${c3p0.checkoutTimeout}"/>
         <property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
@@ -52,5 +52,4 @@
 
     <!-- Enable annotation mode for transactionManager -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
-
 </beans>
