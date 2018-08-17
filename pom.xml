@@ -138,11 +138,17 @@
             <version>1.3.2</version>
         </dependency>
 
-        <!-- 实现slf4j接口并整合 -->
+        <!-- The slf4j API -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <!-- Logback-classic module implements the slf4j API -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.3</version>
         </dependency>
 
         <!-- JSON -->
