@@ -1,3 +1,4 @@
+document.write("<script language=javascript src='/bootcrm/static/common/path.js'></script>");
 'use strict';
 var Main = function () {
     var $html = $('html'), $win = $(window), wrap = $('.app-aside'), MEDIAQUERY = {}, app = $('#app');
@@ -237,7 +238,7 @@ var Main = function () {
         app.hasClass("app-sidebar-fixed") ? $('#fixed-sidebar').prop('checked', true) : $('#fixed-sidebar').prop('checked', false);
         app.hasClass("app-sidebar-closed") ? $('#closed-sidebar').prop('checked', true) : $('#closed-sidebar').prop('checked', false);
         app.hasClass("app-footer-fixed") ? $('#fixed-footer').prop('checked', true) : $('#fixed-footer').prop('checked', false);
-        $('#skin_color').attr("href", "assets/css/themes/" + appSetting.theme + ".css");
+        $('#skin_color').attr("href", basePath + "/assets/css/themes/" + appSetting.theme + ".css");
         $('input[name="setting-theme"]').each(function () {
             $(this).val() == appSetting.theme ? $(this).prop('checked', true) : $(this).prop('checked', false);
         });
@@ -245,7 +246,7 @@ var Main = function () {
 
         $('input[name="setting-theme"]').change(function () {
             var selectedTheme = $(this).val();
-            $('#skin_color').attr("href", "assets/css/themes/" + selectedTheme + ".css");
+            $('#skin_color').attr("href", basePath + "/assets/css/themes/" + selectedTheme + ".css");
             switchLogo(selectedTheme);
             appSetting.theme = selectedTheme;
             $.cookie("clip-setting", JSON.stringify(appSetting));
