@@ -15,9 +15,13 @@
 <!-- start: HEAD -->
 <!-- start: HEAD -->
 <head>
-    <title>Clip-Two - Responsive Admin Template</title>
+    <title>BootCRM - Sign in to your account</title>
+    <!-- start: COMMON RESOURCES REQUIRED -->
     <jsp:include page="/views/common/path.jsp"/>
     <jsp:include page="/views/common/resources.jsp"/>
+    <!-- end: COMMON RESOURCES REQUIRED -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
 </head>
 <!-- end: HEAD -->
 <!-- start: BODY -->
@@ -87,9 +91,11 @@
 </div>
 <!-- end: LOGIN -->
 <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
-<script src="${pageContext.request.contextPath}/vendor/jquery-validation/jquery.validate.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/md5.js"></script>
+<script src="${basePath}/vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="${basePath}/assets/js/md5.js"></script>
 <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+<!-- start: JavaScript Event Handlers for this page -->
+<script src="${basePath}/assets/js/login.js"></script>
 <script>
     jQuery(document).ready(function () {
         Main.init();
@@ -97,7 +103,6 @@
     });
 </script>
 <!-- end: JavaScript Event Handlers for this page -->
-<!-- end: CLIP-TWO JAVASCRIPTS -->
 </body>
 <!-- end: BODY -->
 </html>

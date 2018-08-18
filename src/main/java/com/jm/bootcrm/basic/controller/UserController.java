@@ -46,9 +46,9 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView();
         String loginResult = userService.verifyLogin(user);
         if ("success".equals(loginResult)) {
-            modelAndView.setViewName("/index.jsp");
+            modelAndView.setViewName("redirect:/views/index.jsp");
         } else {
-            modelAndView.setViewName("/views/index00000.jsp");
+            modelAndView.setViewName("redirect:/views/index00000.jsp");
         }
         return modelAndView;
     }
