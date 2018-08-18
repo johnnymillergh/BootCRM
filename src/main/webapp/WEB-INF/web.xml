@@ -5,7 +5,7 @@
     <display-name>Hello BootCRM</display-name>
 
     <welcome-file-list>
-        <welcome-file>/userController/login.action</welcome-file>
+        <welcome-file>/userController/toLogin.action</welcome-file>
     </welcome-file-list>
 
     <!-- Encoding filter's configuration -->
@@ -36,7 +36,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SpringMVC</servlet-name>
-        <!-- Mapping urls like *.do -->
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
