@@ -11,5 +11,11 @@ import com.jm.bootcrm.basic.pojo.User;
  * @time: 7:11 PM
  **/
 public interface UserService {
+    /**
+     * Verify user's login information
+     *
+     * @param user User entity
+     * @return The state of login.
+     */
     String verifyLogin(User user);
 }

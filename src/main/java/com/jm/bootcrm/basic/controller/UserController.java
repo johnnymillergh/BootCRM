@@ -28,12 +28,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/hello")
-    public void hello(HttpServletResponse response) throws IOException {
-        PrintWriter out = response.getWriter();
-        out.write("Hello!");
-    }
-
     @RequestMapping("/toLogin")
     public ModelAndView toLogin() {
         ModelAndView modelAndView = new ModelAndView();
