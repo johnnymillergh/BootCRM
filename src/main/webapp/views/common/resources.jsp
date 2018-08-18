@@ -22,6 +22,10 @@
     <meta content="BootCRM" name="description"/>
     <meta content="Johnny Miller" name="author"/>
     <!-- end: META -->
+    <%-- start: SHORTCUT ICON --%>
+    <link rel="shortcut icon" href="${basePath}/assets/images/bootcrm_shortcut.ico"
+          type="image/x-icon"/>
+    <%-- end: SHORTCUT ICON --%>
     <!-- start: GOOGLE FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
           rel="stylesheet" type="text/css"/>
