@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -35,25 +34,22 @@ public class UserController {
         out.write("Hello!");
     }
 
+    @RequestMapping("/toLogin")
+    public ModelAndView toLogin() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/views/basic/login_signin.jsp");
+        return modelAndView;
+    }
+
     @RequestMapping("/login")
     public ModelAndView login(User user) {
         ModelAndView modelAndView = new ModelAndView();
         String loginResult = userService.verifyLogin(user);
         if ("success".equals(loginResult)) {
-            modelAndView.setViewName("/views/userList.jsp");
+            modelAndView.setViewName("/index.jsp");
         } else {
             modelAndView.setViewName("/views/index00000.jsp");
         }
-        logger.error("This is a ERROR message");
-        logger.warn("This is a WARN message");
-        logger.info("This is a INFO message");
-        logger.debug("This is a DEBUG message");
-        logger.trace("This is a INFO message");
-        System.out.println("isErrorEnabled: "+logger.isErrorEnabled());
-        System.out.println("isDebugEnabled: "+logger.isDebugEnabled());
-        System.out.println("isErrorEnabled: "+logger.isWarnEnabled());
-        System.out.println("isInfoEnabled: "+logger.isInfoEnabled());
-        System.out.println("isTraceEnabled: "+logger.isTraceEnabled());
         return modelAndView;
     }
 }
